@@ -1,0 +1,38 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import DifficultyBadge from './DifficultyBadge.astro';
+
+interface Props {
+  trek: CollectionEntry<'treks'>;
+}
+const { trek } = Astro.props;
+const { title, region, regionSlug, difficulty, durationDays, maxAltitudeM, heroImage, shortDescription } = trek.data;
+---
+
+<a
+  href={`/treks/${trek.id}/`}
+  class="group flex flex-col overflow-hidden rounded-2xl border border-forest-100 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
+  data-region={regionSlug}
+  data-difficulty={difficulty}
+  data-duration={durationDays}
+>
+  <div class="relative h-48 w-full overflow-hidden">
+    <img
+      src={heroImage.src}
+      alt={heroImage.alt}
+      loading="lazy"
+      class="h-full w-full object-cover transition duration-300 group-hover:scale-105"
+    />
+    <DifficultyBadge difficulty={difficulty} class="absolute left-3 top-3 shadow" />
+  </div>
+  <div class="flex flex-1 flex-col gap-2 p-5">
+    <p class="text-xs font-semibold uppercase tracking-wide text-terracotta-600">{region}</p>
+    <h3 class="font-display text-lg text-forest-900">{title}</h3>
+    <p class="line-clamp-2 text-sm text-sand-900/70">{shortDescription}</p>
+    <div class="mt-auto flex items-center gap-4 pt-3 text-xs font-medium text-forest-700">
+      <span>{durationDays} Days</span>
+      <span>&middot;</span>
+      <span>{maxAltitudeM.toLocaleString()} m</span>
+    </div>
+  </div>
+</a>

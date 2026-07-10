@@ -1,0 +1,46 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PhotoCredit from '../components/PhotoCredit.astro';
+import CTASection from '../components/CTASection.astro';
+import attributions from '../data/attributions.json';
+
+const aboutHero = attributions['about-hero'];
+---
+
+<BaseLayout
+  title="About Tripcamps"
+  description="Tripcamps provides information and support to help trekkers explore and organise trekking trips across the globe, starting with India."
+  image={aboutHero.src}
+>
+  <section class="relative flex min-h-[45vh] items-end overflow-hidden">
+    <img src={aboutHero.src} alt={aboutHero.alt} class="absolute inset-0 h-full w-full object-cover" />
+    <div class="absolute inset-0 bg-gradient-to-t from-forest-950 via-forest-950/50 to-forest-950/10"></div>
+    <div class="relative mx-auto w-full max-w-6xl px-4 pb-12 text-white sm:px-6">
+      <h1 class="font-display text-4xl sm:text-5xl">About Tripcamps</h1>
+      <PhotoCredit author={aboutHero.author} license={aboutHero.license} sourceUrl={aboutHero.sourceUrl} class="mt-4" />
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-3xl px-4 py-16 sm:px-6">
+    <div class="prose prose-forest max-w-none prose-headings:font-display prose-headings:text-forest-900">
+      <p>
+        Tripcamps exists to make trekking more approachable. Our core service is information and support — detailed, honest itineraries for trekking destinations around the world, and hands-on help organising the trip itself, from permits to local logistics.
+      </p>
+      <p>
+        We're starting with India, home to some of the most varied trekking terrain on the planet: glacial lakes and alpine meadows in the Garhwal Himalaya, high mountain passes in Himachal Pradesh, the stark trans-Himalayan landscape of Ladakh, alpine lakes in Kashmir, views of the world's third-highest peak from Sikkim, and the table-top hills of the Western Ghats.
+      </p>
+      <h2>What we do</h2>
+      <ul>
+        <li>Publish clear, region-by-region trek guides with day-wise itineraries, difficulty ratings, and seasonal advice.</li>
+        <li>Help you shortlist a trek that matches your fitness level, timeline, and group size.</li>
+        <li>Connect you with the support needed to actually organise the trip — permits, local guides, and logistics.</li>
+      </ul>
+      <h2>What's next</h2>
+      <p>
+        We're expanding our India coverage and building out a shop with trekking guidebooks and route notes — and after India, we're taking Tripcamps global.
+      </p>
+    </div>
+  </section>
+
+  <CTASection heading="Have a trek in mind?" body="Reach out and let's start planning." />
+</BaseLayout>

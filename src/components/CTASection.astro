@@ -1,0 +1,27 @@
+---
+interface Props {
+  heading?: string;
+  body?: string;
+  buttonLabel?: string;
+  buttonHref?: string;
+}
+const {
+  heading = "Can't find the trek you're dreaming of?",
+  body = 'Tell us where you want to go — anywhere in the world — and our trip specialists will design and organise it for you, end to end.',
+  buttonLabel = 'Contact Us',
+  buttonHref = '/contact',
+} = Astro.props;
+---
+
+<section class="bg-forest-900">
+  <div class="mx-auto flex max-w-4xl flex-col items-center gap-6 px-4 py-16 text-center sm:px-6">
+    <h2 class="font-display text-3xl text-white sm:text-4xl">{heading}</h2>
+    <p class="max-w-2xl text-forest-100">{body}</p>
+    <a
+      href={buttonHref}
+      class="inline-block rounded-full bg-terracotta-500 px-8 py-3 font-semibold text-white transition hover:bg-terracotta-600"
+    >
+      {buttonLabel}
+    </a>
+  </div>
+</section>

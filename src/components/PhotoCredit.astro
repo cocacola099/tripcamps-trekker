@@ -1,0 +1,18 @@
+---
+interface Props {
+  author?: string;
+  license?: string;
+  sourceUrl?: string;
+  class?: string;
+}
+const { author, license, sourceUrl, class: className = '' } = Astro.props;
+---
+
+{sourceUrl && (
+  <p class={`text-[11px] text-sand-100/70 ${className}`}>
+    Photo: {author ?? 'Wikimedia Commons'} {license && `(${license})`} &middot;{' '}
+    <a href={sourceUrl} target="_blank" rel="noopener noreferrer" class="underline hover:text-white">
+      source
+    </a>
+  </p>
+)}

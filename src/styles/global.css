@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  --color-forest-950: #10241a;
+  --color-forest-900: #163325;
+  --color-forest-800: #1f4633;
+  --color-forest-700: #2a5c43;
+  --color-forest-600: #397454;
+  --color-forest-500: #4d8f68;
+  --color-forest-400: #74ad87;
+  --color-forest-300: #a3c9ae;
+  --color-forest-200: #cfe3d3;
+  --color-forest-100: #e7f1e8;
+  --color-forest-50: #f4f8f4;
+
+  --color-terracotta-700: #a2481f;
+  --color-terracotta-600: #bf5726;
+  --color-terracotta-500: #d9702f;
+  --color-terracotta-400: #e6924f;
+  --color-terracotta-300: #eeb182;
+  --color-terracotta-100: #fbe8d6;
+
+  --color-sand-950: #201a11;
+  --color-sand-900: #2b2318;
+  --color-sand-100: #f6efe1;
+  --color-sand-50: #fbf7ef;
+
+  --font-display: "DM Serif Display", ui-serif, Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-sand-50);
+    color: var(--color-sand-900);
+    font-family: var(--font-sans);
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+  }
+}

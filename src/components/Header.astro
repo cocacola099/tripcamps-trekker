@@ -1,0 +1,66 @@
+---
+import { getCollection } from 'astro:content';
+import { REGION_ORDER } from '../data/regions';
+
+const regions = await getCollection('regions');
+const orderedRegions = REGION_ORDER
+  .map((slug) => regions.find((r) => r.data.slug === slug))
+  .filter(Boolean);
+---
+
+<header class="sticky top-0 z-50 border-b border-forest-100 bg-sand-50/95 backdrop-blur">
+  <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6">
+    <a href="/" class="flex items-center gap-2 font-display text-xl text-forest-900">
+      <span class="inline-block h-2.5 w-2.5 rounded-full bg-terracotta-500"></span>
+      Tripcamps
+    </a>
+
+    <button
+      id="nav-toggle"
+      class="rounded-md p-2 text-forest-900 md:hidden"
+      aria-label="Toggle navigation"
+      aria-expanded="false"
+    >
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M3 6h18M3 12h18M3 18h18" stroke-linecap="round" />
+      </svg>
+    </button>
+
+    <nav id="nav-menu" class="hidden absolute left-0 right-0 top-full flex-col gap-1 bg-sand-50 px-4 pb-4 md:static md:flex md:flex-row md:items-center md:gap-8 md:bg-transparent md:p-0">
+      <a href="/treks" class="block py-2 font-medium text-forest-900 hover:text-terracotta-600 md:py-0">Explore Treks</a>
+
+      <div class="group relative">
+        <button class="flex w-full items-center justify-between py-2 font-medium text-forest-900 hover:text-terracotta-600 md:w-auto md:py-0">
+          Regions
+          <svg class="ml-1 h-3 w-3" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 4l4 4 4-4" /></svg>
+        </button>
+        <div class="static mt-1 grid grid-cols-1 gap-0.5 pl-4 md:absolute md:left-0 md:mt-3 md:hidden md:w-56 md:rounded-xl md:border md:border-forest-100 md:bg-white md:p-2 md:pl-2 md:shadow-lg md:group-hover:grid">
+          {orderedRegions.map((region) => region && (
+            <a href={`/regions/${region.data.slug}/`} class="rounded-lg px-3 py-2 text-sm text-forest-800 hover:bg-forest-50 hover:text-terracotta-600">
+              {region.data.name}
+            </a>
+          ))}
+        </div>
+      </div>
+
+      <a href="/shop" class="block py-2 font-medium text-forest-900 hover:text-terracotta-600 md:py-0">Shop</a>
+      <a href="/about" class="block py-2 font-medium text-forest-900 hover:text-terracotta-600 md:py-0">About</a>
+      <a
+        href="/contact"
+        class="mt-2 inline-block rounded-full bg-terracotta-500 px-5 py-2 text-center font-semibold text-white hover:bg-terracotta-600 md:mt-0"
+      >
+        Contact Us
+      </a>
+    </nav>
+  </div>
+</header>
+
+<script>
+  const toggle = document.getElementById('nav-toggle');
+  const menu = document.getElementById('nav-menu');
+  toggle?.addEventListener('click', () => {
+    const isOpen = menu?.classList.toggle('flex');
+    menu?.classList.toggle('hidden');
+    toggle.setAttribute('aria-expanded', String(Boolean(isOpen)));
+  });
+</script>

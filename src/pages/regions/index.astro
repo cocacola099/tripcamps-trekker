@@ -1,0 +1,33 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import RegionCard from '../../components/RegionCard.astro';
+import { REGION_ORDER } from '../../data/regions';
+
+const allRegions = await getCollection('regions');
+const allTreks = await getCollection('treks');
+const orderedRegions = REGION_ORDER.map((slug) => allRegions.find((r) => r.data.slug === slug)).filter(Boolean);
+---
+
+<BaseLayout
+  title="Trekking Regions of India | Tripcamps"
+  description="From the Garhwal and Kumaon Himalaya to Ladakh, Kashmir, Sikkim and the Western Ghats — explore India's trekking regions."
+>
+  <section class="bg-forest-900 py-16 text-white">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+      <p class="text-sm font-semibold uppercase tracking-wide text-terracotta-300">India</p>
+      <h1 class="mt-2 font-display text-4xl">Trekking Regions</h1>
+      <p class="mt-3 max-w-2xl text-forest-100">
+        Every region has its own character — glacial lakes in Uttarakhand, high passes in Himachal, trans-Himalayan desert in Ladakh, and table-top hills in the Western Ghats.
+      </p>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-6xl px-4 py-14 sm:px-6">
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {orderedRegions.map((region) => region && (
+        <RegionCard region={region} trekCount={allTreks.filter((t) => t.data.regionSlug === region.data.slug).length} />
+      ))}
+    </div>
+  </section>
+</BaseLayout>

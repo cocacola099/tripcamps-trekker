@@ -1,0 +1,30 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  region: CollectionEntry<'regions'>;
+  trekCount?: number;
+}
+const { region, trekCount } = Astro.props;
+const { name, slug, tagline, heroImage } = region.data;
+---
+
+<a
+  href={`/regions/${slug}/`}
+  class="group relative flex h-64 flex-col justify-end overflow-hidden rounded-2xl shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
+>
+  <img
+    src={heroImage.src}
+    alt={heroImage.alt}
+    loading="lazy"
+    class="absolute inset-0 h-full w-full object-cover transition duration-300 group-hover:scale-105"
+  />
+  <div class="absolute inset-0 bg-gradient-to-t from-forest-950/90 via-forest-950/20 to-transparent"></div>
+  <div class="relative p-5 text-white">
+    <h3 class="font-display text-xl">{name}</h3>
+    <p class="mt-1 text-sm text-sand-100/90">{tagline}</p>
+    {trekCount !== undefined && (
+      <p class="mt-2 text-xs font-semibold uppercase tracking-wide text-terracotta-300">{trekCount} Treks</p>
+    )}
+  </div>
+</a>

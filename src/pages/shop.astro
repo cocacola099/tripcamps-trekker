@@ -1,0 +1,42 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Shop — Coming Soon | Tripcamps"
+  description="The Tripcamps shop is coming soon: trekking guidebooks, route notes, and gear picks for India's best trails."
+>
+  <section class="mx-auto flex min-h-[70vh] max-w-3xl flex-col items-center justify-center px-4 text-center sm:px-6">
+    <span class="rounded-full bg-terracotta-100 px-4 py-1 text-xs font-semibold uppercase tracking-wide text-terracotta-700">
+      Coming Soon
+    </span>
+    <h1 class="mt-6 font-display text-4xl text-forest-900 sm:text-5xl">The Tripcamps Shop</h1>
+    <p class="mt-4 text-lg text-sand-900/70">
+      We're putting together a collection of trekking guidebooks and route notes for India's best trails. Leave your email and we'll let you know the moment it opens.
+    </p>
+
+    <form class="mt-8 flex w-full max-w-md flex-col gap-3 sm:flex-row" data-shop-notify>
+      <label class="sr-only" for="shop-email">Email address</label>
+      <input
+        id="shop-email"
+        type="email"
+        required
+        placeholder="you@example.com"
+        class="flex-1 rounded-full border border-forest-200 px-5 py-3 text-sm focus:border-forest-500 focus:outline-none"
+      />
+      <button
+        type="submit"
+        class="rounded-full bg-forest-900 px-6 py-3 font-semibold text-white transition hover:bg-forest-800"
+      >
+        Notify Me
+      </button>
+    </form>
+    <p class="mt-3 text-xs text-sand-900/50">
+      Note: hook this form up to your preferred email-capture service (e.g. a Google Form, Mailchimp, or Web3Forms endpoint) before launch.
+    </p>
+
+    <a href="/treks" class="mt-10 text-sm font-semibold text-forest-700 hover:text-terracotta-600">
+      &larr; While you wait, explore trekking destinations
+    </a>
+  </section>
+</BaseLayout>

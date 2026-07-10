@@ -1,0 +1,23 @@
+---
+interface Day {
+  day: number;
+  title: string;
+  description: string;
+}
+interface Props {
+  itinerary: Day[];
+}
+const { itinerary } = Astro.props;
+---
+
+<ol class="relative space-y-8 border-l-2 border-forest-200 pl-6">
+  {itinerary.map((day) => (
+    <li class="relative">
+      <span class="absolute -left-[1.95rem] flex h-6 w-6 items-center justify-center rounded-full bg-forest-700 text-[11px] font-bold text-white">
+        {day.day}
+      </span>
+      <h3 class="font-display text-lg text-forest-900">Day {day.day}: {day.title}</h3>
+      <p class="mt-1 text-sm leading-relaxed text-sand-900/80">{day.description}</p>
+    </li>
+  ))}
+</ol>
