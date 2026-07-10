@@ -2,6 +2,8 @@
 title: "Nag Tibba Trek"
 region: "Uttarakhand"
 regionSlug: "uttarakhand"
+country: "India"
+countrySlug: "india"
 difficulty: "Easy"
 durationDays: 2
 maxAltitudeM: 3022

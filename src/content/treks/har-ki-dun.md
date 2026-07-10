@@ -2,6 +2,8 @@
 title: "Har Ki Dun Trek"
 region: "Uttarakhand"
 regionSlug: "uttarakhand"
+country: "India"
+countrySlug: "india"
 difficulty: "Moderate"
 durationDays: 7
 maxAltitudeM: 3566

@@ -2,6 +2,8 @@
 title: "Sandakphu–Phalut Trek"
 region: "West Bengal"
 regionSlug: "west-bengal"
+country: "India"
+countrySlug: "india"
 difficulty: "Moderate"
 durationDays: 6
 maxAltitudeM: 3636

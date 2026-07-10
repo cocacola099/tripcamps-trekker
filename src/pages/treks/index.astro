@@ -2,32 +2,42 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import TrekCard from '../../components/TrekCard.astro';
-import { REGION_ORDER, DIFFICULTIES } from '../../data/regions';
+import { COUNTRY_ORDER, REGIONS_BY_COUNTRY, DIFFICULTIES } from '../../data/regions';
 
 const allTreks = (await getCollection('treks')).sort((a, b) => a.data.title.localeCompare(b.data.title));
 const allRegions = await getCollection('regions');
-const orderedRegions = REGION_ORDER.map((slug) => allRegions.find((r) => r.data.slug === slug)).filter(Boolean);
+const allCountries = await getCollection('countries');
+const orderedCountries = COUNTRY_ORDER.map((slug) => allCountries.find((c) => c.data.slug === slug)).filter(Boolean);
+const orderedRegions = COUNTRY_ORDER.flatMap((countrySlug) =>
+  REGIONS_BY_COUNTRY[countrySlug]
+    .map((slug) => allRegions.find((r) => r.data.slug === slug && r.data.countrySlug === countrySlug))
+    .filter(Boolean)
+);
 ---
 
 <BaseLayout
-  title="All Trekking Destinations in India | Tripcamps"
-  description="Browse 30+ hand-picked trekking destinations across India — filter by region, difficulty, and duration. Full itineraries for every trek."
+  title="All Trekking Destinations — India & Nepal | Tripcamps"
+  description="Browse 50+ hand-picked trekking destinations across India and Nepal — filter by country, region, difficulty, and duration. Full itineraries for every trek."
 >
   <section class="bg-forest-900 py-16 text-white">
     <div class="mx-auto max-w-6xl px-4 sm:px-6">
-      <p class="text-sm font-semibold uppercase tracking-wide text-terracotta-300">India</p>
+      <p class="text-sm font-semibold uppercase tracking-wide text-terracotta-300">India &amp; Nepal</p>
       <h1 class="mt-2 font-display text-4xl">Explore Trekking Destinations</h1>
       <p class="mt-3 max-w-2xl text-forest-100">
-        {allTreks.length} treks across the Himalaya, Ladakh, Kashmir, Sikkim and the Western Ghats — filter below to find your next trail.
+        {allTreks.length} treks across the Himalaya, Ladakh, Kashmir, Sikkim, the Western Ghats, and Nepal — filter below to find your next trail.
       </p>
     </div>
   </section>
 
   <section class="mx-auto max-w-6xl px-4 py-10 sm:px-6">
     <div id="filter-bar" class="flex flex-wrap gap-3 border-b border-forest-100 pb-6">
+      <select id="filter-country" class="rounded-full border border-forest-200 bg-white px-4 py-2 text-sm text-forest-900">
+        <option value="all">All Countries</option>
+        {orderedCountries.map((c) => c && <option value={c.data.slug}>{c.data.name}</option>)}
+      </select>
       <select id="filter-region" class="rounded-full border border-forest-200 bg-white px-4 py-2 text-sm text-forest-900">
         <option value="all">All Regions</option>
-        {orderedRegions.map((r) => r && <option value={r.data.slug}>{r.data.name}</option>)}
+        {orderedRegions.map((r) => r && <option value={r.data.slug} data-country={r.data.countrySlug}>{r.data.name}</option>)}
       </select>
       <select id="filter-difficulty" class="rounded-full border border-forest-200 bg-white px-4 py-2 text-sm text-forest-900">
         <option value="all">All Difficulties</option>
@@ -38,51 +48,113 @@ const orderedRegions = REGION_ORDER.map((slug) => allRegions.find((r) => r.data.
         <option value="short">1–4 Days</option>
         <option value="medium">5–7 Days</option>
         <option value="long">8+ Days</option>
+        <option value="expedition">15+ Days</option>
       </select>
-      <p id="filter-count" class="ml-auto self-center text-sm text-sand-900/60">{allTreks.length} treks</p>
+      <p id="filter-count" class="ml-auto self-center text-sm text-sand-900/60">
+        {allTreks.length > 10 ? `Showing 10 of ${allTreks.length} treks` : `${allTreks.length} treks`}
+      </p>
     </div>
 
     <div id="trek-grid" class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-      {allTreks.map((trek) => <TrekCard trek={trek} />)}
+      {allTreks.map((trek, i) => <TrekCard trek={trek} class={i >= 10 ? 'hidden' : ''} />)}
     </div>
     <p id="no-results" class="mt-10 hidden text-center text-sand-900/60">No treks match those filters yet — try widening your search.</p>
+    <div class="mt-10 flex justify-center">
+      <button
+        id="load-more"
+        class:list={['rounded-full border border-forest-200 bg-white px-8 py-3 font-semibold text-forest-900 hover:bg-forest-50', { hidden: allTreks.length <= 10 }]}
+      >
+        {`Load More Treks (${Math.max(allTreks.length - 10, 0)} remaining)`}
+      </button>
+    </div>
   </section>
 </BaseLayout>
 
 <script>
+  const PAGE_SIZE = 10;
+
+  const countrySelect = document.getElementById('filter-country') as HTMLSelectElement;
   const regionSelect = document.getElementById('filter-region') as HTMLSelectElement;
   const difficultySelect = document.getElementById('filter-difficulty') as HTMLSelectElement;
   const durationSelect = document.getElementById('filter-duration') as HTMLSelectElement;
   const cards = Array.from(document.querySelectorAll<HTMLAnchorElement>('#trek-grid > a'));
   const countLabel = document.getElementById('filter-count');
   const noResults = document.getElementById('no-results');
+  const loadMoreBtn = document.getElementById('load-more') as HTMLButtonElement;
+  const regionOptions = Array.from(regionSelect.options);
+
+  let visibleCount = PAGE_SIZE;
 
   function durationBucket(days: number) {
     if (days <= 4) return 'short';
     if (days <= 7) return 'medium';
-    return 'long';
+    if (days <= 14) return 'long';
+    return 'expedition';
   }
 
-  function applyFilters() {
+  function syncRegionOptions() {
+    const country = countrySelect.value;
+    for (const opt of regionOptions) {
+      if (opt.value === 'all') continue;
+      opt.hidden = country !== 'all' && opt.dataset.country !== country;
+    }
+    if (country !== 'all' && regionSelect.selectedOptions[0]?.dataset.country !== country) {
+      regionSelect.value = 'all';
+    }
+  }
+
+  function matchesFilters(card: HTMLAnchorElement) {
+    const country = countrySelect.value;
     const region = regionSelect.value;
     const difficulty = difficultySelect.value;
     const duration = durationSelect.value;
-    let visible = 0;
-
-    for (const card of cards) {
-      const matchesRegion = region === 'all' || card.dataset.region === region;
-      const matchesDifficulty = difficulty === 'all' || card.dataset.difficulty === difficulty;
-      const matchesDuration = duration === 'all' || durationBucket(Number(card.dataset.duration)) === duration;
-      const show = matchesRegion && matchesDifficulty && matchesDuration;
-      card.classList.toggle('hidden', !show);
-      if (show) visible += 1;
-    }
-
-    if (countLabel) countLabel.textContent = `${visible} trek${visible === 1 ? '' : 's'}`;
-    noResults?.classList.toggle('hidden', visible !== 0);
+    const matchesCountry = country === 'all' || card.dataset.country === country;
+    const matchesRegion = region === 'all' || card.dataset.region === region;
+    const matchesDifficulty = difficulty === 'all' || card.dataset.difficulty === difficulty;
+    const matchesDuration = duration === 'all' || durationBucket(Number(card.dataset.duration)) === duration;
+    return matchesCountry && matchesRegion && matchesDifficulty && matchesDuration;
   }
 
+  function render() {
+    const matched = cards.filter(matchesFilters);
+    const toShow = new Set(matched.slice(0, visibleCount));
+
+    for (const card of cards) {
+      card.classList.toggle('hidden', !toShow.has(card));
+    }
+
+    const shownCount = Math.min(visibleCount, matched.length);
+    if (countLabel) {
+      countLabel.textContent =
+        matched.length === shownCount
+          ? `${matched.length} trek${matched.length === 1 ? '' : 's'}`
+          : `Showing ${shownCount} of ${matched.length} treks`;
+    }
+    noResults?.classList.toggle('hidden', matched.length !== 0);
+
+    const remaining = matched.length - shownCount;
+    loadMoreBtn.classList.toggle('hidden', remaining <= 0);
+    if (remaining > 0) {
+      loadMoreBtn.textContent = `Load More Treks (${remaining} remaining)`;
+    }
+  }
+
+  function applyFilters() {
+    visibleCount = PAGE_SIZE;
+    render();
+  }
+
+  countrySelect?.addEventListener('change', () => {
+    syncRegionOptions();
+    applyFilters();
+  });
   regionSelect?.addEventListener('change', applyFilters);
   difficultySelect?.addEventListener('change', applyFilters);
   durationSelect?.addEventListener('change', applyFilters);
+  loadMoreBtn?.addEventListener('click', () => {
+    visibleCount += PAGE_SIZE;
+    render();
+  });
+
+  render();
 </script>

@@ -2,6 +2,8 @@
 title: "Roopkund Trek"
 region: "Uttarakhand"
 regionSlug: "uttarakhand"
+country: "India"
+countrySlug: "india"
 difficulty: "Difficult"
 durationDays: 8
 maxAltitudeM: 5029

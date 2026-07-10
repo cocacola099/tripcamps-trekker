@@ -1,6 +1,8 @@
 ---
 name: "Jammu & Kashmir"
 slug: "jammu-kashmir"
+country: "India"
+countrySlug: "india"
 tagline: "Alpine lakes strung through meadow and pine"
 description: "The Kashmir valley's high meadows and necklace of alpine lakes make it one of India's most scenic — and most underrated — trekking regions."
 heroImage:

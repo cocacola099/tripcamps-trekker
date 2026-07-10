@@ -2,20 +2,29 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import TrekCard from '../components/TrekCard.astro';
-import RegionCard from '../components/RegionCard.astro';
+import CountryCard from '../components/CountryCard.astro';
 import CTASection from '../components/CTASection.astro';
 import PhotoCredit from '../components/PhotoCredit.astro';
 import attributions from '../data/attributions.json';
-import { REGION_ORDER } from '../data/regions';
+import { COUNTRY_ORDER } from '../data/regions';
 
 const allTreks = await getCollection('treks');
-const featuredTreks = allTreks.filter((t) => t.data.featured).slice(0, 6);
-
 const allRegions = await getCollection('regions');
-const orderedRegions = REGION_ORDER.map((slug) => allRegions.find((r) => r.data.slug === slug)).filter(Boolean);
-const trekCountByRegion = Object.fromEntries(
-  orderedRegions.map((r) => [r!.data.slug, allTreks.filter((t) => t.data.regionSlug === r!.data.slug).length])
+const allCountries = await getCollection('countries');
+
+const orderedCountries = COUNTRY_ORDER.map((slug) => allCountries.find((c) => c.data.slug === slug)).filter(Boolean);
+const trekCountByCountry = Object.fromEntries(
+  orderedCountries.map((c) => [c!.data.slug, allTreks.filter((t) => t.data.countrySlug === c!.data.slug).length])
 );
+const regionCountByCountry = Object.fromEntries(
+  orderedCountries.map((c) => [c!.data.slug, allRegions.filter((r) => r.data.countrySlug === c!.data.slug).length])
+);
+
+// Pick a balanced mix of featured treks across both countries for the homepage.
+const featuredByCountry = COUNTRY_ORDER.map((slug) =>
+  allTreks.filter((t) => t.data.countrySlug === slug && t.data.featured).slice(0, 3)
+);
+const featuredTreks = featuredByCountry.flat();
 
 const homeHero = attributions['home-hero'];
 
@@ -23,14 +32,14 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
   name: 'Tripcamps',
-  description: 'Information and support to explore and organise trekking trips across the globe, starting with India.',
+  description: 'Information and support to explore and organise trekking trips across the globe, starting with India and Nepal.',
   url: 'https://tripcamps.com',
 };
 ---
 
 <BaseLayout
   title="Tripcamps — Explore Treks & Organise Your Next Trekking Trip"
-  description="Discover 30+ trekking destinations across India's Himalaya, Ladakh, Kashmir, Sikkim and the Western Ghats. Get detailed itineraries and let Tripcamps organise your trek."
+  description="Discover 50+ trekking destinations across India and Nepal — the Himalaya, Ladakh, Kashmir, Sikkim, the Western Ghats, Khumbu, Annapurna and more. Get detailed itineraries and let Tripcamps organise your trek."
   image={homeHero.src}
   jsonLd={jsonLd}
 >
@@ -38,7 +47,7 @@ const jsonLd = {
     <img src={homeHero.src} alt={homeHero.alt} class="absolute inset-0 h-full w-full object-cover" />
     <div class="absolute inset-0 bg-gradient-to-t from-forest-950 via-forest-950/60 to-forest-950/20"></div>
     <div class="relative mx-auto max-w-4xl px-4 py-24 text-center text-white sm:px-6">
-      <p class="text-sm font-semibold uppercase tracking-[0.3em] text-terracotta-300">India &middot; Himalaya &amp; Western Ghats</p>
+      <p class="text-sm font-semibold uppercase tracking-[0.3em] text-terracotta-300">India &amp; Nepal &middot; Himalaya &amp; Western Ghats</p>
       <h1 class="mt-4 font-display text-4xl leading-tight sm:text-6xl">
         Explore the world's trekking trails. Let us organise the journey.
       </h1>
@@ -60,12 +69,12 @@ const jsonLd = {
   <section class="mx-auto max-w-6xl px-4 py-20 sm:px-6">
     <div class="grid gap-8 sm:grid-cols-3">
       <div>
-        <p class="font-display text-2xl text-forest-900">30+</p>
-        <p class="mt-1 text-sm text-sand-900/70">Curated trek itineraries across India, and growing.</p>
+        <p class="font-display text-2xl text-forest-900">{allTreks.length}+</p>
+        <p class="mt-1 text-sm text-sand-900/70">Curated trek itineraries across two countries, and growing.</p>
       </div>
       <div>
-        <p class="font-display text-2xl text-forest-900">7 Regions</p>
-        <p class="mt-1 text-sm text-sand-900/70">From the Himalaya to the Western Ghats.</p>
+        <p class="font-display text-2xl text-forest-900">{orderedCountries.length} Countries &middot; {allRegions.length} Regions</p>
+        <p class="mt-1 text-sm text-sand-900/70">From the Garhwal Himalaya to the Khumbu.</p>
       </div>
       <div>
         <p class="font-display text-2xl text-forest-900">End-to-End</p>
@@ -78,14 +87,17 @@ const jsonLd = {
     <div class="mx-auto max-w-6xl px-4 sm:px-6">
       <div class="flex items-end justify-between">
         <div>
-          <p class="text-sm font-semibold uppercase tracking-wide text-terracotta-600">Explore by region</p>
-          <h2 class="mt-2 font-display text-3xl text-forest-900">Where in India would you like to trek?</h2>
+          <p class="text-sm font-semibold uppercase tracking-wide text-terracotta-600">Explore by country</p>
+          <h2 class="mt-2 font-display text-3xl text-forest-900">Where would you like to trek?</h2>
         </div>
-        <a href="/regions" class="hidden text-sm font-semibold text-forest-700 hover:text-terracotta-600 sm:block">View all regions &rarr;</a>
       </div>
-      <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {orderedRegions.map((region) => region && (
-          <RegionCard region={region} trekCount={trekCountByRegion[region.data.slug]} />
+      <div class="mt-10 grid gap-6 sm:grid-cols-2">
+        {orderedCountries.map((country) => country && (
+          <CountryCard
+            country={country}
+            trekCount={trekCountByCountry[country.data.slug]}
+            regionCount={regionCountByCountry[country.data.slug]}
+          />
         ))}
       </div>
     </div>
@@ -110,7 +122,7 @@ const jsonLd = {
       <h2 class="mt-2 font-display text-3xl text-forest-900">From daydream to trailhead</h2>
       <div class="mt-10 grid gap-8 sm:grid-cols-4">
         {[
-          { step: '01', title: 'Browse', body: 'Explore treks by region, difficulty, and season.' },
+          { step: '01', title: 'Browse', body: 'Explore treks by country, region, difficulty, and season.' },
           { step: '02', title: 'Shortlist', body: 'Read the full itinerary, permits, and best time to go.' },
           { step: '03', title: 'Contact Us', body: 'Tell us your dates and group size — we take it from there.' },
           { step: '04', title: 'Trek', body: 'We organise the logistics; you focus on the summit.' },

@@ -67,7 +67,8 @@ async function downloadTo(url, destPath) {
   return buf.length;
 }
 
-const allTargets = JSON.parse(await readFile(new URL('./image-targets.json', import.meta.url)));
+const targetsFileArg = process.argv[3] || 'image-targets.json';
+const allTargets = JSON.parse(await readFile(new URL(`./${targetsFileArg}`, import.meta.url)));
 const jobs = JSON.parse(process.argv[2]); // [{slug, categoryQuery}]
 const targetsBySlug = Object.fromEntries(allTargets.map((t) => [t.slug, t]));
 

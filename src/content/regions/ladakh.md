@@ -1,6 +1,8 @@
 ---
 name: "Ladakh"
 slug: "ladakh"
+country: "India"
+countrySlug: "india"
 tagline: "Trans-Himalayan desert, Buddhist villages, and frozen rivers"
 description: "Ladakh's high-altitude desert landscape, ancient monasteries, and dramatic river gorges make it one of the most distinctive trekking regions anywhere in the world."
 heroImage:

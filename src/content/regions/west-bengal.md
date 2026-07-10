@@ -1,6 +1,8 @@
 ---
 name: "West Bengal"
 slug: "west-bengal"
+country: "India"
+countrySlug: "india"
 tagline: "Ridge-top sunrise views over four of the world's five highest peaks"
 description: "The Singalila Ridge in North Bengal offers a rare vantage point: on a clear day, you can see Everest, Kanchenjunga, Lhotse, and Makalu from the same ridgeline."
 heroImage:

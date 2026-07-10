@@ -22,7 +22,8 @@ const treks = defineCollection({
     title: z.string(),
     region: z.string(),
     regionSlug: z.string(),
-    country: z.string().default('India'),
+    country: z.string(),
+    countrySlug: z.string(),
     difficulty: z.enum(['Easy', 'Moderate', 'Difficult', 'Strenuous']),
     durationDays: z.number(),
     maxAltitudeM: z.number(),
@@ -50,6 +51,8 @@ const regions = defineCollection({
   schema: z.object({
     name: z.string(),
     slug: z.string(),
+    country: z.string(),
+    countrySlug: z.string(),
     tagline: z.string(),
     description: z.string(),
     heroImage: imageCredit,
@@ -58,4 +61,17 @@ const regions = defineCollection({
   }),
 });
 
-export const collections = { treks, regions };
+const countries = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/countries' }),
+  schema: z.object({
+    name: z.string(),
+    slug: z.string(),
+    tagline: z.string(),
+    description: z.string(),
+    heroImage: imageCredit,
+    seoTitle: z.string(),
+    seoDescription: z.string(),
+  }),
+});
+
+export const collections = { treks, regions, countries };

@@ -2,6 +2,8 @@
 title: "Goecha La Trek"
 region: "Sikkim"
 regionSlug: "sikkim"
+country: "India"
+countrySlug: "india"
 difficulty: "Difficult"
 durationDays: 9
 maxAltitudeM: 4940

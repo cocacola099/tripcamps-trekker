@@ -2,6 +2,8 @@
 title: "Green Lake Trek"
 region: "Sikkim"
 regionSlug: "sikkim"
+country: "India"
+countrySlug: "india"
 difficulty: "Strenuous"
 durationDays: 14
 maxAltitudeM: 5000

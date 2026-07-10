@@ -2,6 +2,8 @@
 title: "Pin Parvati Pass Trek"
 region: "Himachal Pradesh"
 regionSlug: "himachal-pradesh"
+country: "India"
+countrySlug: "india"
 difficulty: "Difficult"
 durationDays: 11
 maxAltitudeM: 5319

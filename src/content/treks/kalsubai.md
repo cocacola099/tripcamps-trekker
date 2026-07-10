@@ -2,6 +2,8 @@
 title: "Kalsubai Peak Trek"
 region: "Maharashtra"
 regionSlug: "maharashtra"
+country: "India"
+countrySlug: "india"
 difficulty: "Easy"
 durationDays: 2
 maxAltitudeM: 1646

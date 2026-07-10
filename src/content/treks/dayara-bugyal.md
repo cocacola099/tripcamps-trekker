@@ -2,6 +2,8 @@
 title: "Dayara Bugyal Trek"
 region: "Uttarakhand"
 regionSlug: "uttarakhand"
+country: "India"
+countrySlug: "india"
 difficulty: "Easy"
 durationDays: 4
 maxAltitudeM: 3352

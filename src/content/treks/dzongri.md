@@ -2,6 +2,8 @@
 title: "Dzongri Trek"
 region: "Sikkim"
 regionSlug: "sikkim"
+country: "India"
+countrySlug: "india"
 difficulty: "Moderate"
 durationDays: 6
 maxAltitudeM: 4020

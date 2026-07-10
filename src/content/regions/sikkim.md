@@ -1,6 +1,8 @@
 ---
 name: "Sikkim"
 slug: "sikkim"
+country: "India"
+countrySlug: "india"
 tagline: "Face to face with Kanchenjunga, the world's third-highest peak"
 description: "Sikkim's trekking trails climb through dense rhododendron forest straight into high-altitude views of Kanchenjunga, the world's third-highest mountain."
 heroImage:

@@ -2,6 +2,8 @@
 title: "Kheerganga Trek"
 region: "Himachal Pradesh"
 regionSlug: "himachal-pradesh"
+country: "India"
+countrySlug: "india"
 difficulty: "Easy"
 durationDays: 2
 maxAltitudeM: 2960

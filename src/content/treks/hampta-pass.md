@@ -2,6 +2,8 @@
 title: "Hampta Pass Trek"
 region: "Himachal Pradesh"
 regionSlug: "himachal-pradesh"
+country: "India"
+countrySlug: "india"
 difficulty: "Moderate"
 durationDays: 5
 maxAltitudeM: 4270

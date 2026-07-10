@@ -2,6 +2,8 @@
 title: "Kashmir Great Lakes Trek"
 region: "Jammu & Kashmir"
 regionSlug: "jammu-kashmir"
+country: "India"
+countrySlug: "india"
 difficulty: "Difficult"
 durationDays: 8
 maxAltitudeM: 4191

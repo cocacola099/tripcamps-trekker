@@ -1,11 +1,16 @@
 ---
 import { getCollection } from 'astro:content';
-import { REGION_ORDER } from '../data/regions';
+import { COUNTRY_ORDER, REGIONS_BY_COUNTRY } from '../data/regions';
 
 const regions = await getCollection('regions');
-const orderedRegions = REGION_ORDER
-  .map((slug) => regions.find((r) => r.data.slug === slug))
-  .filter(Boolean);
+const countries = await getCollection('countries');
+const orderedCountries = COUNTRY_ORDER.map((slug) => {
+  const country = countries.find((c) => c.data.slug === slug);
+  const countryRegions = REGIONS_BY_COUNTRY[slug]
+    .map((regionSlug) => regions.find((r) => r.data.slug === regionSlug && r.data.countrySlug === slug))
+    .filter(Boolean);
+  return country ? { country, regions: countryRegions } : null;
+}).filter(Boolean);
 
 const year = new Date().getFullYear();
 ---
@@ -15,36 +20,34 @@ const year = new Date().getFullYear();
     <div>
       <p class="font-display text-xl text-white">Tripcamps</p>
       <p class="mt-3 text-sm text-forest-200">
-        Information and support to help you plan and organise trekking trips across the globe — starting with India's Himalaya and Western Ghats.
+        Information and support to help you plan and organise trekking trips across the globe — starting with India and Nepal.
       </p>
+      <a class="mt-3 block text-sm text-forest-200 hover:text-terracotta-300" href="mailto:hello@tripcamps.com">hello@tripcamps.com</a>
     </div>
 
     <div>
       <p class="font-semibold text-white">Explore</p>
       <ul class="mt-3 space-y-2 text-sm text-forest-200">
         <li><a class="hover:text-terracotta-300" href="/treks">All Treks</a></li>
-        <li><a class="hover:text-terracotta-300" href="/regions">Regions</a></li>
+        <li><a class="hover:text-terracotta-300" href="/regions">All Regions</a></li>
         <li><a class="hover:text-terracotta-300" href="/shop">Shop</a></li>
         <li><a class="hover:text-terracotta-300" href="/about">About Us</a></li>
+        <li><a class="hover:text-terracotta-300" href="/contact">Contact</a></li>
       </ul>
     </div>
 
-    <div>
-      <p class="font-semibold text-white">Regions in India</p>
-      <ul class="mt-3 space-y-2 text-sm text-forest-200">
-        {orderedRegions.map((region) => region && (
-          <li><a class="hover:text-terracotta-300" href={`/regions/${region.data.slug}/`}>{region.data.name}</a></li>
-        ))}
-      </ul>
-    </div>
-
-    <div>
-      <p class="font-semibold text-white">Get in touch</p>
-      <ul class="mt-3 space-y-2 text-sm text-forest-200">
-        <li><a class="hover:text-terracotta-300" href="mailto:hello@tripcamps.com">hello@tripcamps.com</a></li>
-        <li><a class="hover:text-terracotta-300" href="/contact">Contact form</a></li>
-      </ul>
-    </div>
+    {orderedCountries.map((entry) => entry && (
+      <div>
+        <p class="font-semibold text-white">
+          <a class="hover:text-terracotta-300" href={`/${entry.country.data.slug}/`}>{entry.country.data.name}</a>
+        </p>
+        <ul class="mt-3 space-y-2 text-sm text-forest-200">
+          {entry.regions.map((region) => region && (
+            <li><a class="hover:text-terracotta-300" href={`/${entry.country.data.slug}/regions/${region.data.slug}/`}>{region.data.name}</a></li>
+          ))}
+        </ul>
+      </div>
+    ))}
   </div>
 
   <div class="border-t border-forest-800 px-4 py-6 text-center text-xs text-forest-300 sm:px-6">

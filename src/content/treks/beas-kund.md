@@ -2,6 +2,8 @@
 title: "Beas Kund Trek"
 region: "Himachal Pradesh"
 regionSlug: "himachal-pradesh"
+country: "India"
+countrySlug: "india"
 difficulty: "Easy"
 durationDays: 3
 maxAltitudeM: 3894

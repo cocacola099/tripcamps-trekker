@@ -310,5 +310,221 @@
     "license": "CC BY-SA 4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:At_Kalipokhri_Indo-Nepal_Border.jpg",
     "commonsTitle": "File:At Kalipokhri Indo-Nepal Border.jpg"
+  },
+  "everest-base-camp": {
+    "src": "/images/treks/everest-base-camp.jpg",
+    "alt": "Everest Base Camp trail with the Khumbu Icefall in view",
+    "author": "Icicles Adventure Treks &amp; Tours (P.) Ltd.",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_group_of_trekkers_on_the_way_to_Everest_Base_Camp.jpg",
+    "commonsTitle": "File:A group of trekkers on the way to Everest Base Camp.jpg"
+  },
+  "gokyo-lakes": {
+    "src": "/images/treks/gokyo-lakes.jpg",
+    "alt": "Turquoise Gokyo Lakes beneath the Khumbu peaks",
+    "author": "Vyacheslav Argenberg",
+    "license": "CC BY 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gokyo_Ri,_Nepal,_Himalayas.jpg",
+    "commonsTitle": "File:Gokyo Ri, Nepal, Himalayas.jpg"
+  },
+  "everest-three-passes": {
+    "src": "/images/treks/everest-three-passes.jpg",
+    "alt": "High Himalayan wilderness terrain typical of the Everest Three Passes route",
+    "author": "Pravin Mishra",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Himalayan_Wilderness.jpg",
+    "commonsTitle": "File:Himalayan Wilderness.jpg"
+  },
+  "everest-view": {
+    "src": "/images/treks/everest-view.jpg",
+    "alt": "Namche Bazaar with Everest region peaks behind",
+    "author": "Chandra Chakradhar",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Namche.jpg",
+    "commonsTitle": "File:Namche.jpg"
+  },
+  "renjo-la": {
+    "src": "/images/treks/renjo-la.jpg",
+    "alt": "Panoramic Himalayan view from Renjo La pass",
+    "author": "Anuppanthi",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ranjo_la_pass_Everest_National_park.jpg",
+    "commonsTitle": "File:Ranjo la pass Everest National park.jpg"
+  },
+  "chola-pass": {
+    "src": "/images/treks/chola-pass.jpg",
+    "alt": "Glacier crossing at Cho La pass in the Khumbu region",
+    "author": "Kaibak",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cho-La_Pass,_Nepal.jpg",
+    "commonsTitle": "File:Cho-La Pass, Nepal.jpg"
+  },
+  "annapurna-base-camp": {
+    "src": "/images/treks/annapurna-base-camp.jpg",
+    "alt": "Annapurna Base Camp sanctuary surrounded by peaks",
+    "author": "Samdesherpa",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Annapurna_Base_Camp_with_snow.jpg",
+    "commonsTitle": "File:Annapurna Base Camp with snow.jpg"
+  },
+  "annapurna-circuit": {
+    "src": "/images/treks/annapurna-circuit.jpg",
+    "alt": "Thorong La pass on the Annapurna Circuit trek",
+    "author": "Sergey Ashmarin",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tea-house_on_Thorong_La_pass_-_Annapurna_Circuit,_Nepal_-_panoramio.jpg",
+    "commonsTitle": "File:Tea-house on Thorong La pass - Annapurna Circuit, Nepal - panoramio.jpg"
+  },
+  "poon-hill": {
+    "src": "/images/treks/poon-hill.jpg",
+    "alt": "Sunrise over the Annapurna range from Poon Hill",
+    "author": "Usha Pande",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sunrise_behind_the_Annapurna_range._View_from_Poonhill.jpg",
+    "commonsTitle": "File:Sunrise behind the Annapurna range. View from Poonhill.jpg"
+  },
+  "langtang-valley": {
+    "src": "/images/treks/langtang-valley.jpg",
+    "alt": "Langtang Valley framed by Himalayan peaks",
+    "author": "Jean-Pierre Dalbéra from Paris, France",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Le_Gan_Chenpo_(Himalaya,_N%C3%A9pal)_(8446635289).jpg",
+    "commonsTitle": "File:Le Gan Chenpo (Himalaya, Népal) (8446635289).jpg"
+  },
+  "gosaikunda": {
+    "src": "/images/treks/gosaikunda.jpg",
+    "alt": "Gosaikunda, a sacred alpine lake in the Langtang region",
+    "author": "Pratap Baniya",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gosainkunda_lake.JPG",
+    "commonsTitle": "File:Gosainkunda lake.JPG"
+  },
+  "helambu": {
+    "src": "/images/treks/helambu.jpg",
+    "alt": "Terraced hills and villages of the Helambu region",
+    "author": "Bernard Gagnon",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Malemchigaon.jpg",
+    "commonsTitle": "File:Malemchigaon.jpg"
+  },
+  "manaslu-circuit": {
+    "src": "/images/treks/manaslu-circuit.jpg",
+    "alt": "Larkya La pass on the Manaslu Circuit trek",
+    "author": "Nabin K. Sapkota",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Larke_La_Manaslu_Circuit_109.jpg",
+    "commonsTitle": "File:Larke La Manaslu Circuit 109.jpg"
+  },
+  "upper-mustang": {
+    "src": "/images/treks/upper-mustang.jpg",
+    "alt": "The high-desert landscape of Upper Mustang near Lo Manthang",
+    "author": "Sunuwargr",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_Lens_into_the_Forbidden_Kingdom.jpg",
+    "commonsTitle": "File:A Lens into the Forbidden Kingdom.jpg"
+  },
+  "kanchenjunga-base-camp": {
+    "src": "/images/treks/kanchenjunga-base-camp.jpg",
+    "alt": "Kanchenjunga massif seen from the Nepal side base camp trail",
+    "author": "Danielvandermaas",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kanchenjunga-north.jpg",
+    "commonsTitle": "File:Kanchenjunga-north.jpg"
+  },
+  "annapurna": {
+    "src": "/images/regions/annapurna.jpg",
+    "alt": "The Annapurna massif rising above the Kali Gandaki valley",
+    "author": "Gagandev007",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Annapurna_Ranges_with_Basecamp,_Mar_2015.JPG",
+    "commonsTitle": "File:Annapurna Ranges with Basecamp, Mar 2015.JPG"
+  },
+  "langtang": {
+    "src": "/images/regions/langtang.jpg",
+    "alt": "Mountain landscape of the Langtang region north of Kathmandu",
+    "author": "Q-lieb-in",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Trekker_tourist_during_hiking_in_Langtang_national_park.jpg",
+    "commonsTitle": "File:Trekker tourist during hiking in Langtang national park.jpg"
+  },
+  "mustang": {
+    "src": "/images/regions/mustang.jpg",
+    "alt": "The arid trans-Himalayan landscape of Mustang",
+    "author": "AnticheSere",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mustang_desert.JPG",
+    "commonsTitle": "File:Mustang desert.JPG"
+  },
+  "nepal-hero": {
+    "src": "/images/countries/nepal-hero.jpg",
+    "alt": "Panoramic Himalayan mountain range in Nepal",
+    "author": "Skrissh2013",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Himalaya_in_Panorama.jpg",
+    "commonsTitle": "File:Himalaya in Panorama.jpg"
+  },
+  "tilicho-lake": {
+    "src": "/images/treks/tilicho-lake.jpg",
+    "alt": "Tilicho Lake, one of the world's highest lakes",
+    "author": "Aabhyas",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:At_tilicho_lake.jpg",
+    "commonsTitle": "File:At tilicho lake.jpg"
+  },
+  "tsum-valley": {
+    "src": "/images/treks/tsum-valley.jpg",
+    "alt": "Tsum Valley's Tibetan-influenced villages and monasteries",
+    "author": "Sharadgurung7711",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:TsumValleyGorkha.jpg",
+    "commonsTitle": "File:TsumValleyGorkha.jpg"
+  },
+  "khumbu": {
+    "src": "/images/regions/khumbu.jpg",
+    "alt": "The Khumbu region's high Himalayan landscape near Everest",
+    "author": "Jone Jones",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Beyond_Syangboche.jpg",
+    "commonsTitle": "File:Beyond Syangboche.jpg"
+  },
+  "mardi-himal": {
+    "src": "/images/treks/mardi-himal.jpg",
+    "alt": "Tadapani, a forested village on the southern Annapurna approach near Mardi Himal",
+    "author": "Wassuprai",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:06_Tadapani.jpg",
+    "commonsTitle": "File:06 Tadapani.jpg"
+  },
+  "manaslu": {
+    "src": "/images/regions/manaslu.jpg",
+    "alt": "Bhimthang, a high-altitude campsite on the Manaslu Circuit trek",
+    "author": "Radgeshree",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bhimthang.jpg",
+    "commonsTitle": "File:Bhimthang.jpg"
+  },
+  "khopra-ridge": {
+    "src": "/images/treks/khopra-ridge.jpg",
+    "alt": "Khopra Ridge with Annapurna South and Dhaulagiri views",
+    "author": "Nabin K. Sapkota",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:On_the_way_to_Khopra_Hill_(105).jpg",
+    "commonsTitle": "File:On the way to Khopra Hill (105).jpg"
+  },
+  "nar-phu-valley": {
+    "src": "/images/treks/nar-phu-valley.jpg",
+    "alt": "Annapurna III and Gangapurna in Manang district, near the Nar Phu Valley",
+    "author": "anita kluska",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Annapurna_III_and_Gangapurna.jpg",
+    "commonsTitle": "File:Annapurna III and Gangapurna.jpg"
+  },
+  "kanchenjunga": {
+    "src": "/images/regions/kanchenjunga.jpg",
+    "alt": "The remote Kanchenjunga region of eastern Nepal",
+    "author": "Nirmaljoshi",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ghunsa_Village.JPG",
+    "commonsTitle": "File:Ghunsa Village.JPG"
   }
 }

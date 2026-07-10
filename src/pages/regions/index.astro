@@ -2,32 +2,42 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import RegionCard from '../../components/RegionCard.astro';
-import { REGION_ORDER } from '../../data/regions';
 
 const allRegions = await getCollection('regions');
 const allTreks = await getCollection('treks');
-const orderedRegions = REGION_ORDER.map((slug) => allRegions.find((r) => r.data.slug === slug)).filter(Boolean);
+const countries = (await getCollection('countries')).sort((a, b) => a.data.name.localeCompare(b.data.name));
 ---
 
 <BaseLayout
-  title="Trekking Regions of India | Tripcamps"
-  description="From the Garhwal and Kumaon Himalaya to Ladakh, Kashmir, Sikkim and the Western Ghats — explore India's trekking regions."
+  title="All Trekking Regions | Tripcamps"
+  description="Browse every trekking region Tripcamps covers, across India and Nepal — from the Garhwal Himalaya to the Khumbu."
 >
   <section class="bg-forest-900 py-16 text-white">
     <div class="mx-auto max-w-6xl px-4 sm:px-6">
-      <p class="text-sm font-semibold uppercase tracking-wide text-terracotta-300">India</p>
-      <h1 class="mt-2 font-display text-4xl">Trekking Regions</h1>
+      <p class="text-sm font-semibold uppercase tracking-wide text-terracotta-300">Explore</p>
+      <h1 class="mt-2 font-display text-4xl">All Trekking Regions</h1>
       <p class="mt-3 max-w-2xl text-forest-100">
-        Every region has its own character — glacial lakes in Uttarakhand, high passes in Himachal, trans-Himalayan desert in Ladakh, and table-top hills in the Western Ghats.
+        {allRegions.length} regions across {countries.length} countries, from the Garhwal Himalaya to the Khumbu.
       </p>
     </div>
   </section>
 
-  <section class="mx-auto max-w-6xl px-4 py-14 sm:px-6">
-    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-      {orderedRegions.map((region) => region && (
-        <RegionCard region={region} trekCount={allTreks.filter((t) => t.data.regionSlug === region.data.slug).length} />
-      ))}
-    </div>
-  </section>
+  {countries.map((country) => {
+    const regionsInCountry = allRegions.filter((r) => r.data.countrySlug === country.data.slug);
+    return (
+      <section class="mx-auto max-w-6xl px-4 py-14 sm:px-6">
+        <div class="flex items-end justify-between">
+          <h2 class="font-display text-2xl text-forest-900">{country.data.name}</h2>
+          <a href={`/${country.data.slug}/`} class="text-sm font-semibold text-forest-700 hover:text-terracotta-600">
+            Explore {country.data.name} &rarr;
+          </a>
+        </div>
+        <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {regionsInCountry.map((region) => (
+            <RegionCard region={region} trekCount={allTreks.filter((t) => t.data.regionSlug === region.data.slug && t.data.countrySlug === country.data.slug).length} />
+          ))}
+        </div>
+      </section>
+    );
+  })}
 </BaseLayout>

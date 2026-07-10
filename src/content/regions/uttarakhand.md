@@ -1,6 +1,8 @@
 ---
 name: "Uttarakhand"
 slug: "uttarakhand"
+country: "India"
+countrySlug: "india"
 tagline: "Glacial lakes, alpine meadows, and the source of the Ganges"
 description: "Uttarakhand's Garhwal and Kumaon Himalaya pack an extraordinary range of trekking terrain into a relatively compact stretch of mountains."
 heroImage:

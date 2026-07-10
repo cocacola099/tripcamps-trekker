@@ -63,11 +63,16 @@ async function downloadTo(url, destPath) {
   return buf.length;
 }
 
+const targetsFile = process.argv[2] || 'image-targets.json';
 const targets = JSON.parse(await (await import('node:fs/promises')).readFile(
-  new URL('./image-targets.json', import.meta.url)
+  new URL(`./${targetsFile}`, import.meta.url)
 ));
 
-const attributions = {};
+const attrPath = path.resolve('src/data/attributions.json');
+let attributions = {};
+try {
+  attributions = JSON.parse(await (await import('node:fs/promises')).readFile(attrPath, 'utf-8'));
+} catch {}
 const outDir = path.resolve('public/images');
 
 for (const t of targets) {

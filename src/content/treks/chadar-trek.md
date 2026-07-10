@@ -2,6 +2,8 @@
 title: "Chadar Trek"
 region: "Ladakh"
 regionSlug: "ladakh"
+country: "India"
+countrySlug: "india"
 difficulty: "Strenuous"
 durationDays: 9
 maxAltitudeM: 3390

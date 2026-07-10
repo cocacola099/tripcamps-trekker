@@ -2,6 +2,8 @@
 title: "Bhrigu Lake Trek"
 region: "Himachal Pradesh"
 regionSlug: "himachal-pradesh"
+country: "India"
+countrySlug: "india"
 difficulty: "Moderate"
 durationDays: 4
 maxAltitudeM: 4300

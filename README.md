@@ -1,6 +1,6 @@
 # Tripcamps Tekker
 
-The Tripcamps marketing/discovery site: explore trekking destinations around the world, read full itineraries, and get in touch to have Tripcamps organise the trip. Phase 1 covers **India** with 30 trek guides across 7 regions. `/shop` is a "coming soon" placeholder for a future trekking-books store.
+The Tripcamps marketing/discovery site: explore trekking destinations around the world, read full itineraries, and get in touch to have Tripcamps organise the trip. Content is organised as **Country → Region → Trek**, currently covering **India** (30 treks across 7 regions) and **Nepal** (20 treks across 6 regions) — 50 treks in total. `/shop` is a "coming soon" placeholder for a future trekking-books store.
 
 Built with [Astro](https://astro.build) (static output), Tailwind CSS v4, and Markdown content collections — no backend required to run.
 
@@ -9,37 +9,44 @@ Built with [Astro](https://astro.build) (static output), Tailwind CSS v4, and Ma
 ```
 src/
   content/
-    treks/*.md       one file per trek (30) — itinerary, stats, images, SEO fields
-    regions/*.md      one file per region (7) — intro copy + hero image
-  content.config.ts    Zod schema for the two collections above
+    treks/*.md         one file per trek (50) — itinerary, stats, images, SEO fields
+    regions/*.md        one file per region (13) — intro copy + hero image
+    countries/*.md       one file per country (2: india, nepal) — intro copy + hero image
+  content.config.ts    Zod schema for the three collections above
   data/
     attributions.json  photo credit metadata for every sourced image
-    regions.ts          region display order + difficulty list
-  components/          Header, Footer, SEO, TrekCard, RegionCard, etc.
+    regions.ts          country display order + region-per-country map + difficulty list
+  components/          Header, Footer, SEO, TrekCard, RegionCard, CountryCard, etc.
   layouts/BaseLayout.astro
   pages/
-    index.astro         homepage
-    treks/index.astro   all-treks listing with client-side filter
-    treks/[slug].astro  trek detail page (dynamic route over the treks collection)
-    regions/index.astro
-    regions/[region].astro
-    shop.astro           "coming soon"
+    index.astro                    homepage (explore by country + popular treks)
+    [country]/index.astro          country hub (dynamic route over the countries collection)
+    [country]/regions/[region].astro   region hub (dynamic route over the regions collection)
+    [country]/treks/[slug].astro       trek detail (dynamic route over the treks collection)
+    treks/index.astro              all-treks listing (both countries) with client-side filter
+    regions/index.astro            all-regions listing, grouped by country
+    shop.astro                      "coming soon"
     contact.astro
     about.astro
 public/
-  images/                downloaded hero photos (treks/, regions/, site/)
+  images/                downloaded hero photos (treks/, regions/, countries/, site/)
 scripts/
-  fetch-images.mjs                  one-off Wikimedia Commons image sourcing script
+  fetch-images.mjs                  one-off Wikimedia Commons image sourcing script (takes a targets-file arg)
   fetch-images-wiki-fallback.mjs    fallback pass via Wikipedia lead images
-  fetch-images-category.mjs         precision pass via Commons categories
-  image-targets.json                search terms per image slug
+  fetch-images-category.mjs         precision pass via Commons categories (takes a targets-file arg)
+  image-targets.json                search terms per image slug (India)
+  image-targets-nepal.json          search terms per image slug (Nepal)
 ```
 
 The `scripts/` folder is **not** part of the build — it was used once to source free-licensed photos from Wikimedia Commons into `public/images/` and `src/data/attributions.json`. Re-run it only if you need to re-source or add images for new content.
 
 ## Adding a new trek
 
-Add one Markdown file to `src/content/treks/`, following the frontmatter shape in `src/content.config.ts` (title, region, difficulty, itinerary, heroImage, SEO fields, etc.) — copy an existing trek file as a template. The page at `/treks/<filename-without-extension>/` is generated automatically.
+Add one Markdown file to `src/content/treks/`, following the frontmatter shape in `src/content.config.ts` (title, region, regionSlug, country, countrySlug, difficulty, itinerary, heroImage, SEO fields, etc.) — copy an existing trek file as a template. The page at `/<countrySlug>/treks/<filename-without-extension>/` is generated automatically.
+
+## Adding a new country
+
+Add a Markdown file to `src/content/countries/`, add its regions to `src/content/regions/` (each with `countrySlug` set), add the country's slug to `COUNTRY_ORDER` and its region slugs to `REGIONS_BY_COUNTRY` in `src/data/regions.ts`, then add trek files as above.
 
 ## Commands
 

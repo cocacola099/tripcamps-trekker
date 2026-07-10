@@ -4,14 +4,16 @@ import DifficultyBadge from './DifficultyBadge.astro';
 
 interface Props {
   trek: CollectionEntry<'treks'>;
+  class?: string;
 }
-const { trek } = Astro.props;
-const { title, region, regionSlug, difficulty, durationDays, maxAltitudeM, heroImage, shortDescription } = trek.data;
+const { trek, class: className = '' } = Astro.props;
+const { title, region, regionSlug, country, countrySlug, difficulty, durationDays, maxAltitudeM, heroImage, shortDescription } = trek.data;
 ---
 
 <a
-  href={`/treks/${trek.id}/`}
-  class="group flex flex-col overflow-hidden rounded-2xl border border-forest-100 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
+  href={`/${countrySlug}/treks/${trek.id}/`}
+  class={`group flex flex-col overflow-hidden rounded-2xl border border-forest-100 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg ${className}`}
+  data-country={countrySlug}
   data-region={regionSlug}
   data-difficulty={difficulty}
   data-duration={durationDays}
@@ -26,7 +28,7 @@ const { title, region, regionSlug, difficulty, durationDays, maxAltitudeM, heroI
     <DifficultyBadge difficulty={difficulty} class="absolute left-3 top-3 shadow" />
   </div>
   <div class="flex flex-1 flex-col gap-2 p-5">
-    <p class="text-xs font-semibold uppercase tracking-wide text-terracotta-600">{region}</p>
+    <p class="text-xs font-semibold uppercase tracking-wide text-terracotta-600">{region}, {country}</p>
     <h3 class="font-display text-lg text-forest-900">{title}</h3>
     <p class="line-clamp-2 text-sm text-sand-900/70">{shortDescription}</p>
     <div class="mt-auto flex items-center gap-4 pt-3 text-xs font-medium text-forest-700">

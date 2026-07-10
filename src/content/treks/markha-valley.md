@@ -2,6 +2,8 @@
 title: "Markha Valley Trek"
 region: "Ladakh"
 regionSlug: "ladakh"
+country: "India"
+countrySlug: "india"
 difficulty: "Moderate"
 durationDays: 8
 maxAltitudeM: 5214

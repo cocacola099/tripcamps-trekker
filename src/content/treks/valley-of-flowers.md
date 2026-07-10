@@ -2,6 +2,8 @@
 title: "Valley of Flowers Trek"
 region: "Uttarakhand"
 regionSlug: "uttarakhand"
+country: "India"
+countrySlug: "india"
 difficulty: "Moderate"
 durationDays: 6
 maxAltitudeM: 4300

@@ -2,6 +2,8 @@
 title: "Stok Kangri Trek"
 region: "Ladakh"
 regionSlug: "ladakh"
+country: "India"
+countrySlug: "india"
 difficulty: "Strenuous"
 durationDays: 7
 maxAltitudeM: 6153

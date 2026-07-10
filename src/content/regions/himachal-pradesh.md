@@ -1,6 +1,8 @@
 ---
 name: "Himachal Pradesh"
 slug: "himachal-pradesh"
+country: "India"
+countrySlug: "india"
 tagline: "High passes, pine forests, and the road to Spiti"
 description: "From the Kullu and Parvati valleys to the high passes bordering Spiti, Himachal Pradesh offers some of India's most varied trekking, from easy weekend hikes to serious high-altitude crossings."
 heroImage:

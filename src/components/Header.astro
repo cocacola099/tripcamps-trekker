@@ -1,11 +1,16 @@
 ---
 import { getCollection } from 'astro:content';
-import { REGION_ORDER } from '../data/regions';
+import { COUNTRY_ORDER, REGIONS_BY_COUNTRY } from '../data/regions';
 
 const regions = await getCollection('regions');
-const orderedRegions = REGION_ORDER
-  .map((slug) => regions.find((r) => r.data.slug === slug))
-  .filter(Boolean);
+const countries = await getCollection('countries');
+const orderedCountries = COUNTRY_ORDER.map((slug) => {
+  const country = countries.find((c) => c.data.slug === slug);
+  const countryRegions = REGIONS_BY_COUNTRY[slug]
+    .map((regionSlug) => regions.find((r) => r.data.slug === regionSlug && r.data.countrySlug === slug))
+    .filter(Boolean);
+  return country ? { country, regions: countryRegions } : null;
+}).filter(Boolean);
 ---
 
 <header class="sticky top-0 z-50 border-b border-forest-100 bg-sand-50/95 backdrop-blur">
@@ -31,15 +36,26 @@ const orderedRegions = REGION_ORDER
 
       <div class="group relative">
         <button class="flex w-full items-center justify-between py-2 font-medium text-forest-900 hover:text-terracotta-600 md:w-auto md:py-0">
-          Regions
+          Destinations
           <svg class="ml-1 h-3 w-3" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 4l4 4 4-4" /></svg>
         </button>
-        <div class="static mt-1 grid grid-cols-1 gap-0.5 pl-4 md:absolute md:left-0 md:mt-3 md:hidden md:w-56 md:rounded-xl md:border md:border-forest-100 md:bg-white md:p-2 md:pl-2 md:shadow-lg md:group-hover:grid">
-          {orderedRegions.map((region) => region && (
-            <a href={`/regions/${region.data.slug}/`} class="rounded-lg px-3 py-2 text-sm text-forest-800 hover:bg-forest-50 hover:text-terracotta-600">
-              {region.data.name}
-            </a>
-          ))}
+        <div class="static mt-1 md:absolute md:left-0 md:top-full md:hidden md:w-[28rem] md:pt-3 md:group-hover:block">
+          <div class="grid grid-cols-1 gap-4 pl-4 md:grid-cols-2 md:gap-6 md:rounded-xl md:border md:border-forest-100 md:bg-white md:p-4 md:pl-4 md:shadow-lg">
+            {orderedCountries.map((entry) => entry && (
+              <div>
+                <a href={`/${entry.country.data.slug}/`} class="block px-3 py-1 text-xs font-semibold uppercase tracking-wide text-terracotta-600 hover:text-terracotta-700">
+                  {entry.country.data.name}
+                </a>
+                <div class="mt-1 grid grid-cols-1 gap-0.5">
+                  {entry.regions.map((region) => region && (
+                    <a href={`/${entry.country.data.slug}/regions/${region.data.slug}/`} class="rounded-lg px-3 py-2 text-sm text-forest-800 hover:bg-forest-50 hover:text-terracotta-600">
+                      {region.data.name}
+                    </a>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 

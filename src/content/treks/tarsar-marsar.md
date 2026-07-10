@@ -2,6 +2,8 @@
 title: "Tarsar Marsar Trek"
 region: "Jammu & Kashmir"
 regionSlug: "jammu-kashmir"
+country: "India"
+countrySlug: "india"
 difficulty: "Moderate"
 durationDays: 7
 maxAltitudeM: 4100

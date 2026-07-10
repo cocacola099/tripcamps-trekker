@@ -2,6 +2,8 @@
 title: "Nubra Valley Trek"
 region: "Ladakh"
 regionSlug: "ladakh"
+country: "India"
+countrySlug: "india"
 difficulty: "Moderate"
 durationDays: 6
 maxAltitudeM: 5370

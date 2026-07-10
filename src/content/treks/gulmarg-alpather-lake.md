@@ -2,6 +2,8 @@
 title: "Gulmarg to Alpather Lake Trek"
 region: "Jammu & Kashmir"
 regionSlug: "jammu-kashmir"
+country: "India"
+countrySlug: "india"
 difficulty: "Moderate"
 durationDays: 3
 maxAltitudeM: 4114

@@ -2,6 +2,8 @@
 title: "Kedarkantha Trek"
 region: "Uttarakhand"
 regionSlug: "uttarakhand"
+country: "India"
+countrySlug: "india"
 difficulty: "Moderate"
 durationDays: 6
 maxAltitudeM: 3810

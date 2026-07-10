@@ -6,11 +6,11 @@ interface Props {
   trekCount?: number;
 }
 const { region, trekCount } = Astro.props;
-const { name, slug, tagline, heroImage } = region.data;
+const { name, slug, countrySlug, tagline, heroImage } = region.data;
 ---
 
 <a
-  href={`/regions/${slug}/`}
+  href={`/${countrySlug}/regions/${slug}/`}
   class="group relative flex h-64 flex-col justify-end overflow-hidden rounded-2xl shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
 >
   <img

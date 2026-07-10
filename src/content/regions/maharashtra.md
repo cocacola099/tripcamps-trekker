@@ -1,6 +1,8 @@
 ---
 name: "Maharashtra"
 slug: "maharashtra"
+country: "India"
+countrySlug: "india"
 tagline: "Table-top forts and monsoon-green Sahyadri hills"
 description: "The Sahyadri range (Western Ghats) around Mumbai and Pune offers short, accessible treks to hill forts and plateau summits — perfect for a weekend in the hills."
 heroImage:

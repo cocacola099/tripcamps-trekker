@@ -1,25 +1,25 @@
 ---
 import { getCollection, render } from 'astro:content';
-import BaseLayout from '../../layouts/BaseLayout.astro';
-import TrekCard from '../../components/TrekCard.astro';
-import CTASection from '../../components/CTASection.astro';
-import PhotoCredit from '../../components/PhotoCredit.astro';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import TrekCard from '../../../components/TrekCard.astro';
+import CTASection from '../../../components/CTASection.astro';
+import PhotoCredit from '../../../components/PhotoCredit.astro';
 
 export async function getStaticPaths() {
   const regions = await getCollection('regions');
   return regions.map((region) => ({
-    params: { region: region.data.slug },
+    params: { country: region.data.countrySlug, region: region.data.slug },
     props: { region },
   }));
 }
 
 const { region } = Astro.props;
 const { Content } = await render(region);
-const { name, tagline, heroImage, seoTitle, seoDescription, slug } = region.data;
+const { name, country, tagline, heroImage, seoTitle, seoDescription, slug, countrySlug } = region.data;
 
 const allTreks = await getCollection('treks');
 const regionTreks = allTreks
-  .filter((t) => t.data.regionSlug === slug)
+  .filter((t) => t.data.regionSlug === slug && t.data.countrySlug === countrySlug)
   .sort((a, b) => a.data.title.localeCompare(b.data.title));
 
 const jsonLd = {
@@ -27,8 +27,8 @@ const jsonLd = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://tripcamps.com/' },
-    { '@type': 'ListItem', position: 2, name: 'Regions', item: 'https://tripcamps.com/regions/' },
-    { '@type': 'ListItem', position: 3, name, item: `https://tripcamps.com/regions/${slug}/` },
+    { '@type': 'ListItem', position: 2, name: country, item: `https://tripcamps.com/${countrySlug}/` },
+    { '@type': 'ListItem', position: 3, name, item: `https://tripcamps.com/${countrySlug}/regions/${slug}/` },
   ],
 };
 ---
@@ -38,7 +38,12 @@ const jsonLd = {
     <img src={heroImage.src} alt={heroImage.alt} class="absolute inset-0 h-full w-full object-cover" />
     <div class="absolute inset-0 bg-gradient-to-t from-forest-950 via-forest-950/50 to-forest-950/10"></div>
     <div class="relative mx-auto w-full max-w-6xl px-4 pb-12 text-white sm:px-6">
-      <p class="text-sm font-semibold uppercase tracking-wide text-terracotta-300">India</p>
+      <nav class="mb-4 text-xs text-sand-100/80">
+        <a href="/" class="hover:underline">Home</a> /
+        <a href={`/${countrySlug}/`} class="hover:underline">{country}</a> /
+        <span>{name}</span>
+      </nav>
+      <p class="text-sm font-semibold uppercase tracking-wide text-terracotta-300">{country}</p>
       <h1 class="mt-2 font-display text-4xl sm:text-5xl">{name}</h1>
       <p class="mt-3 max-w-2xl text-sand-100/90">{tagline}</p>
       <PhotoCredit author={heroImage.author} license={heroImage.license} sourceUrl={heroImage.sourceUrl} class="mt-4" />
