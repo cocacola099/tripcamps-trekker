@@ -78,6 +78,13 @@ const treks = (await getCollection('treks')).sort((a, b) => a.data.title.localeC
   const form = document.getElementById('contact-form') as HTMLFormElement;
   const status = document.getElementById('contact-status');
   const submitBtn = form?.querySelector('button[type="submit"]') as HTMLButtonElement | null;
+  const trekSelect = document.getElementById('trek') as HTMLSelectElement | null;
+
+  const prefilledTrek = new URLSearchParams(window.location.search).get('trek');
+  if (prefilledTrek && trekSelect) {
+    const match = Array.from(trekSelect.options).find((opt) => opt.value === prefilledTrek);
+    if (match) trekSelect.value = match.value;
+  }
 
   form?.addEventListener('submit', async (e) => {
     e.preventDefault();
