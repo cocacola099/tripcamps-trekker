@@ -16,7 +16,7 @@ import { withBase } from '../utils/url';
       We're putting together a collection of trekking guidebooks and route notes for India and Nepal's best trails. Leave your email and we'll let you know the moment it opens.
     </p>
 
-    <form class="mt-8 flex w-full max-w-md flex-col gap-3 sm:flex-row" data-shop-notify>
+    <form id="shop-notify-form" class="mt-8 flex w-full max-w-md flex-col gap-3 sm:flex-row">
       <label class="sr-only" for="shop-email">Email address</label>
       <input
         id="shop-email"
@@ -32,12 +32,27 @@ import { withBase } from '../utils/url';
         Notify Me
       </button>
     </form>
-    <p class="mt-3 text-xs text-sand-900/50">
-      Note: hook this form up to your preferred email-capture service (e.g. a Google Form, Mailchimp, or Web3Forms endpoint) before launch.
-    </p>
+    <p id="shop-notify-status" class="mt-3 text-sm text-forest-700" role="status"></p>
 
     <a href={withBase('/treks')} class="mt-10 text-sm font-semibold text-forest-700 hover:text-terracotta-600">
       &larr; While you wait, explore trekking destinations
     </a>
   </section>
 </BaseLayout>
+
+<script>
+  const NOTIFY_EMAIL = 'tripcamps.sales@gmail.com';
+  const form = document.getElementById('shop-notify-form') as HTMLFormElement;
+  const status = document.getElementById('shop-notify-status');
+
+  form?.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const email = (document.getElementById('shop-email') as HTMLInputElement).value;
+    const subject = 'Notify me when the shop opens';
+    const body = `Please notify me at ${email} when the Tripcamps shop opens.`;
+    window.location.href = `mailto:${NOTIFY_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    if (status) {
+      status.textContent = "Opening your email app to send this to us — we'll notify you at that address.";
+    }
+  });
+</script>

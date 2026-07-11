@@ -24,11 +24,7 @@ const treks = (await getCollection('treks')).sort((a, b) => a.data.title.localeC
       <div class="space-y-6 lg:col-span-1">
         <div class="rounded-2xl border border-forest-100 bg-white p-6 shadow-sm">
           <h2 class="font-display text-lg text-forest-900">Email</h2>
-          <a href="mailto:hello@tripcamps.com" class="mt-1 block text-sm text-terracotta-600 hover:underline">hello@tripcamps.com</a>
-        </div>
-        <div class="rounded-2xl border border-forest-100 bg-white p-6 shadow-sm">
-          <h2 class="font-display text-lg text-forest-900">WhatsApp</h2>
-          <p class="mt-1 text-sm text-sand-900/70">Add your WhatsApp business number here — trekkers often prefer a quick chat over email.</p>
+          <a href="mailto:tripcamps.sales@gmail.com" class="mt-1 block text-sm text-terracotta-600 hover:underline">tripcamps.sales@gmail.com</a>
         </div>
         <div class="rounded-2xl border border-forest-100 bg-white p-6 shadow-sm">
           <h2 class="font-display text-lg text-forest-900">Response Time</h2>
@@ -75,15 +71,33 @@ const treks = (await getCollection('treks')).sort((a, b) => a.data.title.localeC
 </BaseLayout>
 
 <script>
-  // NOTE: this is not wired to a backend yet. Point the form at a real
-  // endpoint (e.g. Web3Forms, Formspree, or your own API route) before launch.
+  const CONTACT_EMAIL = 'tripcamps.sales@gmail.com';
   const form = document.getElementById('contact-form') as HTMLFormElement;
   const status = document.getElementById('contact-status');
+
   form?.addEventListener('submit', (e) => {
     e.preventDefault();
+    const data = new FormData(form);
+    const name = String(data.get('name') || '');
+    const email = String(data.get('email') || '');
+    const phone = String(data.get('phone') || '');
+    const trek = String(data.get('trek') || '');
+    const message = String(data.get('message') || '');
+
+    const subject = `Trek inquiry from ${name}`;
+    const bodyLines = [
+      `Name: ${name}`,
+      `Email: ${email}`,
+      phone && `Phone/WhatsApp: ${phone}`,
+      trek && `Trek of interest: ${trek}`,
+      '',
+      message,
+    ].filter(Boolean);
+
+    window.location.href = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyLines.join('\n'))}`;
+
     if (status) {
-      status.textContent =
-        "Thanks! This form isn't connected to an inbox yet — for now, please email hello@tripcamps.com directly.";
+      status.textContent = 'Opening your email app to send this to us — if it doesn\'t open, email us directly at ' + CONTACT_EMAIL + '.';
     }
   });
 </script>
