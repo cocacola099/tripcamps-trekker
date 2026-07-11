@@ -7,6 +7,7 @@ import ItineraryTimeline from '../../../components/ItineraryTimeline.astro';
 import CTASection from '../../../components/CTASection.astro';
 import TrekCard from '../../../components/TrekCard.astro';
 import PhotoCredit from '../../../components/PhotoCredit.astro';
+import ShareButton from '../../../components/ShareButton.astro';
 import { withBase } from '../../../utils/url';
 
 export async function getStaticPaths() {
@@ -43,6 +44,8 @@ const {
   seoDescription,
 } = trek.data;
 
+const trekUrl = withBase(`/${countrySlug}/treks/${trek.id}/`);
+
 const allTreks = await getCollection('treks');
 const relatedTreks = allTreks
   .filter((t) => t.id !== trek.id && t.data.regionSlug === regionSlug && t.data.countrySlug === countrySlug)
@@ -78,6 +81,7 @@ const jsonLd = [
   <section class="relative flex min-h-[60vh] items-end overflow-hidden">
     <img src={withBase(heroImage.src)} alt={heroImage.alt} class="absolute inset-0 h-full w-full object-cover" />
     <div class="absolute inset-0 bg-gradient-to-t from-forest-950 via-forest-950/50 to-forest-950/10"></div>
+    <ShareButton url={trekUrl} title={title} text={shortDescription} class="absolute right-4 top-4 sm:right-6 sm:top-6" />
     <div class="relative mx-auto w-full max-w-6xl px-4 pb-12 text-white sm:px-6">
       <nav class="mb-4 text-xs text-sand-100/80">
         <a href={withBase('/')} class="hover:underline">Home</a> /

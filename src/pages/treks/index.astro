@@ -77,7 +77,7 @@ const orderedRegions = COUNTRY_ORDER.flatMap((countrySlug) =>
   const regionSelect = document.getElementById('filter-region') as HTMLSelectElement;
   const difficultySelect = document.getElementById('filter-difficulty') as HTMLSelectElement;
   const durationSelect = document.getElementById('filter-duration') as HTMLSelectElement;
-  const cards = Array.from(document.querySelectorAll<HTMLAnchorElement>('#trek-grid > a'));
+  const cards = Array.from(document.querySelectorAll<HTMLDivElement>('#trek-grid > div'));
   const countLabel = document.getElementById('filter-count');
   const noResults = document.getElementById('no-results');
   const loadMoreBtn = document.getElementById('load-more') as HTMLButtonElement;
@@ -103,7 +103,7 @@ const orderedRegions = COUNTRY_ORDER.flatMap((countrySlug) =>
     }
   }
 
-  function matchesFilters(card: HTMLAnchorElement) {
+  function matchesFilters(card: HTMLDivElement) {
     const country = countrySelect.value;
     const region = regionSelect.value;
     const difficulty = difficultySelect.value;

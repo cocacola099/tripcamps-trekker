@@ -1,0 +1,78 @@
+---
+interface Props {
+  url: string;
+  title: string;
+  text?: string;
+  class?: string;
+}
+const { url, title, text = '', class: className = '' } = Astro.props;
+---
+
+<button
+  type="button"
+  class={`share-button inline-flex items-center justify-center rounded-full bg-card/90 p-2 text-forest-900 shadow backdrop-blur transition hover:bg-card hover:text-terracotta-600 ${className}`}
+  data-share-url={url}
+  data-share-title={title}
+  data-share-text={text}
+  aria-label={`Share ${title}`}
+>
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 12v7a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7" />
+    <path d="M16 6l-4-4-4 4" />
+    <path d="M12 2v13" />
+  </svg>
+</button>
+
+<script>
+  function showToast(message: string) {
+    let toast = document.getElementById('share-toast');
+    if (!toast) {
+      toast = document.createElement('div');
+      toast.id = 'share-toast';
+      toast.className =
+        'fixed bottom-6 left-1/2 z-[100] -translate-x-1/2 rounded-full bg-forest-900 px-5 py-2.5 text-sm font-medium text-white shadow-lg transition-opacity duration-300';
+      document.body.appendChild(toast);
+    }
+    toast.textContent = message;
+    toast.style.opacity = '1';
+    window.clearTimeout((toast as any)._hideTimer);
+    (toast as any)._hideTimer = window.setTimeout(() => {
+      if (toast) toast.style.opacity = '0';
+    }, 2200);
+  }
+
+  document.addEventListener('click', async (e) => {
+    const btn = (e.target as HTMLElement)?.closest('.share-button') as HTMLButtonElement | null;
+    if (!btn) return;
+    e.preventDefault();
+    e.stopPropagation();
+
+    const path = btn.dataset.shareUrl || window.location.pathname;
+    const title = btn.dataset.shareTitle || document.title;
+    const text = btn.dataset.shareText || '';
+    const absoluteUrl = new URL(path, window.location.origin).href;
+
+    if (navigator.share) {
+      try {
+        await navigator.share({ title, text, url: absoluteUrl });
+      } catch (err) {
+        if ((err as Error).name !== 'AbortError') {
+          showToast('Could not share — link copied instead');
+          navigator.clipboard?.writeText(absoluteUrl).catch(() => {});
+        }
+      }
+      return;
+    }
+
+    if (navigator.clipboard) {
+      try {
+        await navigator.clipboard.writeText(absoluteUrl);
+        showToast('Link copied to clipboard');
+      } catch {
+        window.prompt('Copy this link:', absoluteUrl);
+      }
+    } else {
+      window.prompt('Copy this link:', absoluteUrl);
+    }
+  });
+</script>

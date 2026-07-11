@@ -1,6 +1,7 @@
 ---
 import type { CollectionEntry } from 'astro:content';
 import DifficultyBadge from './DifficultyBadge.astro';
+import ShareButton from './ShareButton.astro';
 import { withBase } from '../utils/url';
 
 interface Props {
@@ -9,11 +10,11 @@ interface Props {
 }
 const { trek, class: className = '' } = Astro.props;
 const { title, region, regionSlug, country, countrySlug, difficulty, durationDays, maxAltitudeM, heroImage, shortDescription } = trek.data;
+const trekUrl = withBase(`/${countrySlug}/treks/${trek.id}/`);
 ---
 
-<a
-  href={withBase(`/${countrySlug}/treks/${trek.id}/`)}
-  class={`group flex flex-col overflow-hidden rounded-2xl border border-forest-100 bg-card shadow-sm transition hover:-translate-y-1 hover:shadow-lg ${className}`}
+<div
+  class={`group relative flex flex-col overflow-hidden rounded-2xl border border-forest-100 bg-card shadow-sm transition hover:-translate-y-1 hover:shadow-lg ${className}`}
   data-country={countrySlug}
   data-region={regionSlug}
   data-difficulty={difficulty}
@@ -27,6 +28,7 @@ const { title, region, regionSlug, country, countrySlug, difficulty, durationDay
       class="h-full w-full object-cover transition duration-300 group-hover:scale-105"
     />
     <DifficultyBadge difficulty={difficulty} class="absolute left-3 top-3 shadow" />
+    <ShareButton url={trekUrl} title={title} text={shortDescription} class="absolute right-3 top-3 z-10" />
   </div>
   <div class="flex flex-1 flex-col gap-2 p-5">
     <p class="text-xs font-semibold uppercase tracking-wide font-accent text-terracotta-600">{region}, {country}</p>
@@ -38,4 +40,5 @@ const { title, region, regionSlug, country, countrySlug, difficulty, durationDay
       <span>{maxAltitudeM.toLocaleString()} m</span>
     </div>
   </div>
-</a>
+  <a href={trekUrl} class="absolute inset-0 z-0" aria-label={title}></a>
+</div>
