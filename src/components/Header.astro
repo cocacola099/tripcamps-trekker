@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import { COUNTRY_ORDER, REGIONS_BY_COUNTRY } from '../data/regions';
+import { withBase } from '../utils/url';
 
 const regions = await getCollection('regions');
 const countries = await getCollection('countries');
@@ -15,7 +16,7 @@ const orderedCountries = COUNTRY_ORDER.map((slug) => {
 
 <header class="sticky top-0 z-50 border-b border-forest-100 bg-sand-50/95 backdrop-blur">
   <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6">
-    <a href="/" class="flex items-center gap-2 font-display text-xl text-forest-900">
+    <a href={withBase('/')} class="flex items-center gap-2 font-display text-xl text-forest-900">
       <span class="inline-block h-2.5 w-2.5 rounded-full bg-terracotta-500"></span>
       Tripcamps
     </a>
@@ -32,7 +33,7 @@ const orderedCountries = COUNTRY_ORDER.map((slug) => {
     </button>
 
     <nav id="nav-menu" class="hidden absolute left-0 right-0 top-full flex-col gap-1 bg-sand-50 px-4 pb-4 md:static md:flex md:flex-row md:items-center md:gap-8 md:bg-transparent md:p-0">
-      <a href="/treks" class="block py-2 font-medium text-forest-900 hover:text-terracotta-600 md:py-0">Explore Treks</a>
+      <a href={withBase('/treks')} class="block py-2 font-medium text-forest-900 hover:text-terracotta-600 md:py-0">Explore Treks</a>
 
       <div class="group relative">
         <button class="flex w-full items-center justify-between py-2 font-medium text-forest-900 hover:text-terracotta-600 md:w-auto md:py-0">
@@ -43,12 +44,12 @@ const orderedCountries = COUNTRY_ORDER.map((slug) => {
           <div class="grid grid-cols-1 gap-4 pl-4 md:grid-cols-2 md:gap-6 md:rounded-xl md:border md:border-forest-100 md:bg-white md:p-4 md:pl-4 md:shadow-lg">
             {orderedCountries.map((entry) => entry && (
               <div>
-                <a href={`/${entry.country.data.slug}/`} class="block px-3 py-1 text-xs font-semibold uppercase tracking-wide text-terracotta-600 hover:text-terracotta-700">
+                <a href={withBase(`/${entry.country.data.slug}/`)} class="block px-3 py-1 text-xs font-semibold uppercase tracking-wide text-terracotta-600 hover:text-terracotta-700">
                   {entry.country.data.name}
                 </a>
                 <div class="mt-1 grid grid-cols-1 gap-0.5">
                   {entry.regions.map((region) => region && (
-                    <a href={`/${entry.country.data.slug}/regions/${region.data.slug}/`} class="rounded-lg px-3 py-2 text-sm text-forest-800 hover:bg-forest-50 hover:text-terracotta-600">
+                    <a href={withBase(`/${entry.country.data.slug}/regions/${region.data.slug}/`)} class="rounded-lg px-3 py-2 text-sm text-forest-800 hover:bg-forest-50 hover:text-terracotta-600">
                       {region.data.name}
                     </a>
                   ))}
@@ -59,10 +60,10 @@ const orderedCountries = COUNTRY_ORDER.map((slug) => {
         </div>
       </div>
 
-      <a href="/shop" class="block py-2 font-medium text-forest-900 hover:text-terracotta-600 md:py-0">Shop</a>
-      <a href="/about" class="block py-2 font-medium text-forest-900 hover:text-terracotta-600 md:py-0">About</a>
+      <a href={withBase('/shop')} class="block py-2 font-medium text-forest-900 hover:text-terracotta-600 md:py-0">Shop</a>
+      <a href={withBase('/about')} class="block py-2 font-medium text-forest-900 hover:text-terracotta-600 md:py-0">About</a>
       <a
-        href="/contact"
+        href={withBase('/contact')}
         class="mt-2 inline-block rounded-full bg-terracotta-500 px-5 py-2 text-center font-semibold text-white hover:bg-terracotta-600 md:mt-0"
       >
         Contact Us

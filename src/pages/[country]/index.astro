@@ -5,6 +5,7 @@ import RegionCard from '../../components/RegionCard.astro';
 import TrekCard from '../../components/TrekCard.astro';
 import CTASection from '../../components/CTASection.astro';
 import PhotoCredit from '../../components/PhotoCredit.astro';
+import { withBase } from '../../utils/url';
 
 export async function getStaticPaths() {
   const countries = await getCollection('countries');
@@ -34,7 +35,7 @@ const jsonLd = {
 
 <BaseLayout title={seoTitle} description={seoDescription} image={heroImage.src} jsonLd={jsonLd}>
   <section class="relative flex min-h-[50vh] items-end overflow-hidden">
-    <img src={heroImage.src} alt={heroImage.alt} class="absolute inset-0 h-full w-full object-cover" />
+    <img src={withBase(heroImage.src)} alt={heroImage.alt} class="absolute inset-0 h-full w-full object-cover" />
     <div class="absolute inset-0 bg-gradient-to-t from-forest-950 via-forest-950/50 to-forest-950/10"></div>
     <div class="relative mx-auto w-full max-w-6xl px-4 pb-12 text-white sm:px-6">
       <h1 class="font-display text-4xl sm:text-5xl">{name}</h1>

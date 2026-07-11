@@ -84,6 +84,14 @@ This is a fully static site — `npm run build` produces plain HTML/CSS/JS in `d
 3. Add HTTPS with `certbot --nginx -d tripcamps.com -d www.tripcamps.com`.
 4. To update the live site after content changes: `git pull && npm install && npm run build`, then reload nginx if needed (static files only, no restart required).
 
+## Live test deployment (GitHub Pages)
+
+`.github/workflows/deploy-pages.yml` builds and deploys the site to GitHub Pages automatically on every push to `master`, for quick testing — separate from the eventual VPS production deploy above.
+
+- **One-time setup:** in the repo, go to Settings → Pages → Build and deployment → Source, and select **GitHub Actions**. The workflow then runs on its own.
+- **URL:** `https://cocacola099.github.io/tripcamps-trekker/`
+- GitHub Pages serves project sites from a `/<repo-name>/` subpath, so the workflow builds with `GITHUB_PAGES=true`, which makes `astro.config.mjs` switch `site`/`base` to that subpath. All internal links and image paths go through the `withBase()` helper in `src/utils/url.ts` so they resolve correctly under the subpath — local dev and the VPS production build are unaffected (they still serve from `/`).
+
 ## Known follow-ups before launch
 
 - **Contact form** (`src/pages/contact.astro`) and **shop notify form** (`src/pages/shop.astro`) are UI-only — wire them to a real backend (e.g. [Web3Forms](https://web3forms.com), [Formspree](https://formspree.io), or your own API route) before going live.

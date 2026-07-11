@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import RegionCard from '../../components/RegionCard.astro';
+import { withBase } from '../../utils/url';
 
 const allRegions = await getCollection('regions');
 const allTreks = await getCollection('treks');
@@ -28,7 +29,7 @@ const countries = (await getCollection('countries')).sort((a, b) => a.data.name.
       <section class="mx-auto max-w-6xl px-4 py-14 sm:px-6">
         <div class="flex items-end justify-between">
           <h2 class="font-display text-2xl text-forest-900">{country.data.name}</h2>
-          <a href={`/${country.data.slug}/`} class="text-sm font-semibold text-forest-700 hover:text-terracotta-600">
+          <a href={withBase(`/${country.data.slug}/`)} class="text-sm font-semibold text-forest-700 hover:text-terracotta-600">
             Explore {country.data.name} &rarr;
           </a>
         </div>

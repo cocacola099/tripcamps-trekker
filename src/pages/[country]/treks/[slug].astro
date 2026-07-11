@@ -7,6 +7,7 @@ import ItineraryTimeline from '../../../components/ItineraryTimeline.astro';
 import CTASection from '../../../components/CTASection.astro';
 import TrekCard from '../../../components/TrekCard.astro';
 import PhotoCredit from '../../../components/PhotoCredit.astro';
+import { withBase } from '../../../utils/url';
 
 export async function getStaticPaths() {
   const treks = await getCollection('treks');
@@ -75,13 +76,13 @@ const jsonLd = [
 
 <BaseLayout title={seoTitle} description={seoDescription} image={heroImage.src} type="article" jsonLd={jsonLd}>
   <section class="relative flex min-h-[60vh] items-end overflow-hidden">
-    <img src={heroImage.src} alt={heroImage.alt} class="absolute inset-0 h-full w-full object-cover" />
+    <img src={withBase(heroImage.src)} alt={heroImage.alt} class="absolute inset-0 h-full w-full object-cover" />
     <div class="absolute inset-0 bg-gradient-to-t from-forest-950 via-forest-950/50 to-forest-950/10"></div>
     <div class="relative mx-auto w-full max-w-6xl px-4 pb-12 text-white sm:px-6">
       <nav class="mb-4 text-xs text-sand-100/80">
-        <a href="/" class="hover:underline">Home</a> /
-        <a href={`/${countrySlug}/`} class="hover:underline">{country}</a> /
-        <a href={`/${countrySlug}/regions/${regionSlug}/`} class="hover:underline">{region}</a> /
+        <a href={withBase('/')} class="hover:underline">Home</a> /
+        <a href={withBase(`/${countrySlug}/`)} class="hover:underline">{country}</a> /
+        <a href={withBase(`/${countrySlug}/regions/${regionSlug}/`)} class="hover:underline">{region}</a> /
         <span>{title}</span>
       </nav>
       <DifficultyBadge difficulty={difficulty} class="mb-3" />
@@ -139,7 +140,7 @@ const jsonLd = [
           {groupSize && <div class="flex justify-between"><dt class="text-sand-900/60">Group Size</dt><dd class="font-medium text-forest-900">{groupSize}</dd></div>}
         </dl>
         <a
-          href="/contact"
+          href={withBase('/contact')}
           class="mt-6 block rounded-full bg-terracotta-500 px-6 py-3 text-center font-semibold text-white hover:bg-terracotta-600"
         >
           Contact Us to Organise This Trek

@@ -7,6 +7,7 @@ import CTASection from '../components/CTASection.astro';
 import PhotoCredit from '../components/PhotoCredit.astro';
 import attributions from '../data/attributions.json';
 import { COUNTRY_ORDER } from '../data/regions';
+import { withBase } from '../utils/url';
 
 const allTreks = await getCollection('treks');
 const allRegions = await getCollection('regions');
@@ -44,7 +45,7 @@ const jsonLd = {
   jsonLd={jsonLd}
 >
   <section class="relative flex min-h-[80vh] items-center overflow-hidden">
-    <img src={homeHero.src} alt={homeHero.alt} class="absolute inset-0 h-full w-full object-cover" />
+    <img src={withBase(homeHero.src)} alt={homeHero.alt} class="absolute inset-0 h-full w-full object-cover" />
     <div class="absolute inset-0 bg-gradient-to-t from-forest-950 via-forest-950/60 to-forest-950/20"></div>
     <div class="relative mx-auto max-w-4xl px-4 py-24 text-center text-white sm:px-6">
       <p class="text-sm font-semibold uppercase tracking-[0.3em] text-terracotta-300">India &amp; Nepal &middot; Himalaya &amp; Western Ghats</p>
@@ -55,10 +56,10 @@ const jsonLd = {
         Tripcamps helps you discover trekking destinations across the globe with detailed itineraries — and connects you with the support to actually go do them.
       </p>
       <div class="mt-8 flex flex-wrap items-center justify-center gap-4">
-        <a href="/treks" class="rounded-full bg-terracotta-500 px-8 py-3 font-semibold text-white hover:bg-terracotta-600">
+        <a href={withBase('/treks')} class="rounded-full bg-terracotta-500 px-8 py-3 font-semibold text-white hover:bg-terracotta-600">
           Explore Treks
         </a>
-        <a href="/contact" class="rounded-full border border-white/40 px-8 py-3 font-semibold text-white hover:bg-white/10">
+        <a href={withBase('/contact')} class="rounded-full border border-white/40 px-8 py-3 font-semibold text-white hover:bg-white/10">
           Plan My Trek
         </a>
       </div>
@@ -109,7 +110,7 @@ const jsonLd = {
         <p class="text-sm font-semibold uppercase tracking-wide text-terracotta-600">Popular treks</p>
         <h2 class="mt-2 font-display text-3xl text-forest-900">Trails trekkers love</h2>
       </div>
-      <a href="/treks" class="hidden text-sm font-semibold text-forest-700 hover:text-terracotta-600 sm:block">View all treks &rarr;</a>
+      <a href={withBase('/treks')} class="hidden text-sm font-semibold text-forest-700 hover:text-terracotta-600 sm:block">View all treks &rarr;</a>
     </div>
     <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
       {featuredTreks.map((trek) => <TrekCard trek={trek} />)}

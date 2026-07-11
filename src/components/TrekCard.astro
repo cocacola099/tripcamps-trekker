@@ -1,6 +1,7 @@
 ---
 import type { CollectionEntry } from 'astro:content';
 import DifficultyBadge from './DifficultyBadge.astro';
+import { withBase } from '../utils/url';
 
 interface Props {
   trek: CollectionEntry<'treks'>;
@@ -11,7 +12,7 @@ const { title, region, regionSlug, country, countrySlug, difficulty, durationDay
 ---
 
 <a
-  href={`/${countrySlug}/treks/${trek.id}/`}
+  href={withBase(`/${countrySlug}/treks/${trek.id}/`)}
   class={`group flex flex-col overflow-hidden rounded-2xl border border-forest-100 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg ${className}`}
   data-country={countrySlug}
   data-region={regionSlug}
@@ -20,7 +21,7 @@ const { title, region, regionSlug, country, countrySlug, difficulty, durationDay
 >
   <div class="relative h-48 w-full overflow-hidden">
     <img
-      src={heroImage.src}
+      src={withBase(heroImage.src)}
       alt={heroImage.alt}
       loading="lazy"
       class="h-full w-full object-cover transition duration-300 group-hover:scale-105"

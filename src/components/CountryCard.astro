@@ -1,5 +1,6 @@
 ---
 import type { CollectionEntry } from 'astro:content';
+import { withBase } from '../utils/url';
 
 interface Props {
   country: CollectionEntry<'countries'>;
@@ -11,11 +12,11 @@ const { name, slug, tagline, heroImage } = country.data;
 ---
 
 <a
-  href={`/${slug}/`}
+  href={withBase(`/${slug}/`)}
   class="group relative flex h-80 flex-col justify-end overflow-hidden rounded-2xl shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
 >
   <img
-    src={heroImage.src}
+    src={withBase(heroImage.src)}
     alt={heroImage.alt}
     loading="lazy"
     class="absolute inset-0 h-full w-full object-cover transition duration-300 group-hover:scale-105"

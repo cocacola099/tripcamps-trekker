@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { withBase } from '../utils/url';
 ---
 
 <BaseLayout
@@ -35,7 +36,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       Note: hook this form up to your preferred email-capture service (e.g. a Google Form, Mailchimp, or Web3Forms endpoint) before launch.
     </p>
 
-    <a href="/treks" class="mt-10 text-sm font-semibold text-forest-700 hover:text-terracotta-600">
+    <a href={withBase('/treks')} class="mt-10 text-sm font-semibold text-forest-700 hover:text-terracotta-600">
       &larr; While you wait, explore trekking destinations
     </a>
   </section>

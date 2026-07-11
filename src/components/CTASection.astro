@@ -1,4 +1,6 @@
 ---
+import { withBase } from '../utils/url';
+
 interface Props {
   heading?: string;
   body?: string;
@@ -18,7 +20,7 @@ const {
     <h2 class="font-display text-3xl text-white sm:text-4xl">{heading}</h2>
     <p class="max-w-2xl text-forest-100">{body}</p>
     <a
-      href={buttonHref}
+      href={withBase(buttonHref)}
       class="inline-block rounded-full bg-terracotta-500 px-8 py-3 font-semibold text-white transition hover:bg-terracotta-600"
     >
       {buttonLabel}
