@@ -1,4 +1,4 @@
-export const COUNTRY_ORDER = ['india', 'nepal'] as const;
+export const COUNTRY_ORDER = ['india', 'nepal', 'thailand'] as const;
 
 export const REGIONS_BY_COUNTRY: Record<(typeof COUNTRY_ORDER)[number], string[]> = {
   india: [
@@ -11,6 +11,7 @@ export const REGIONS_BY_COUNTRY: Record<(typeof COUNTRY_ORDER)[number], string[]
     'maharashtra',
   ],
   nepal: ['khumbu', 'annapurna', 'langtang', 'manaslu', 'mustang', 'kanchenjunga'],
+  thailand: ['northern-thailand', 'central-thailand', 'southern-thailand'],
 };
 
 // Kept for backwards compatibility where only India's region order is needed.

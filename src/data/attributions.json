@@ -526,5 +526,117 @@
     "license": "CC BY-SA 4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ghunsa_Village.JPG",
     "commonsTitle": "File:Ghunsa Village.JPG"
+  },
+  "doi-inthanon": {
+    "src": "/images/treks/doi-inthanon.jpg",
+    "alt": "Cloud forest at the summit of Doi Inthanon, Thailand's highest peak",
+    "author": "Vyacheslav Argenberg",
+    "license": "CC BY 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Doi_Inthanon,_Royal_Stupa_2,_Thailand.jpg",
+    "commonsTitle": "File:Doi Inthanon, Royal Stupa 2, Thailand.jpg"
+  },
+  "doi-chiang-dao": {
+    "src": "/images/treks/doi-chiang-dao.jpg",
+    "alt": "The limestone massif of Doi Chiang Dao",
+    "author": "KOSIN SUKHUM",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chiang_Dao_National_Park_Chiang_Mai_Thailand.jpg",
+    "commonsTitle": "File:Chiang Dao National Park Chiang Mai Thailand.jpg"
+  },
+  "mae-hong-son-hill-tribe": {
+    "src": "/images/treks/mae-hong-son-hill-tribe.jpg",
+    "alt": "Hills and valleys of the Mae Hong Son region",
+    "author": "Vyacheslav Argenberg",
+    "license": "CC BY 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mae_Hong_Son,_Forest_on_the_hills,_Thailand.jpg",
+    "commonsTitle": "File:Mae Hong Son, Forest on the hills, Thailand.jpg"
+  },
+  "pai-jungle-canyon": {
+    "src": "/images/treks/pai-jungle-canyon.jpg",
+    "alt": "The layered ridges of Pai Canyon",
+    "author": "Bernhard T",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pai_Canyon,_Thailand_2012-12-08_-_panoramio.jpg",
+    "commonsTitle": "File:Pai Canyon, Thailand 2012-12-08 - panoramio.jpg"
+  },
+  "chiang-rai-golden-triangle": {
+    "src": "/images/treks/chiang-rai-golden-triangle.jpg",
+    "alt": "The Golden Triangle where Thailand, Laos, and Myanmar meet",
+    "author": "For a gallery of some more of my uploaded pictures see:  here.",
+    "license": "CC0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1985_at_Golden_Triangle._Small_boats_on_Mekong_River._Confluence_Ruak_River._Spielvogel_Archiv.jpg",
+    "commonsTitle": "File:1985 at Golden Triangle. Small boats on Mekong River. Confluence Ruak River. Spielvogel Archiv.jpg"
+  },
+  "erawan-national-park": {
+    "src": "/images/treks/erawan-national-park.jpg",
+    "alt": "The emerald tiers of Erawan Falls",
+    "author": "The original uploader was Drimascus at German Wikipedia.",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Erawan_waterfall.JPG",
+    "commonsTitle": "File:Erawan waterfall.JPG"
+  },
+  "khao-yai": {
+    "src": "/images/treks/khao-yai.jpg",
+    "alt": "Rainforest waterfall in Khao Yai National Park",
+    "author": "BerryJ",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1001_Khao_Yai_National_Park_2.jpg",
+    "commonsTitle": "File:1001 Khao Yai National Park 2.jpg"
+  },
+  "khao-sok": {
+    "src": "/images/treks/khao-sok.jpg",
+    "alt": "Limestone karsts rising over Khao Sok's rainforest",
+    "author": "Vyacheslav Argenberg",
+    "license": "CC BY 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Khao_Sok,_Cheow_Lan_Lake,_Limestone_rock_formations,_Thailand.jpg",
+    "commonsTitle": "File:Khao Sok, Cheow Lan Lake, Limestone rock formations, Thailand.jpg"
+  },
+  "khao-luang": {
+    "src": "/images/treks/khao-luang.jpg",
+    "alt": "Cloud forest slopes of Khao Luang National Park",
+    "author": "Chaiyathat",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Krung_Ching_Waterfall_(2).jpg",
+    "commonsTitle": "File:Krung Ching Waterfall (2).jpg"
+  },
+  "northern-thailand": {
+    "src": "/images/regions/northern-thailand.jpg",
+    "alt": "Mountain landscape of northern Thailand near Chiang Mai",
+    "author": "Vyacheslav Argenberg",
+    "license": "CC BY 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Huai_Nam_Dang_National_Park,_Thailand.jpg",
+    "commonsTitle": "File:Huai Nam Dang National Park, Thailand.jpg"
+  },
+  "doi-ang-khang": {
+    "src": "/images/treks/doi-ang-khang.jpg",
+    "alt": "Tea plantations on the slopes of Doi Ang Khang",
+    "author": "Ditsakul",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Misty_Morning_at_Doi_Angkhang_Mountain,_Chiangmai,_Thailand.jpg",
+    "commonsTitle": "File:Misty Morning at Doi Angkhang Mountain, Chiangmai, Thailand.jpg"
+  },
+  "central-thailand": {
+    "src": "/images/regions/central-thailand.jpg",
+    "alt": "River and forest landscape near Kanchanaburi",
+    "author": "Deror Avi",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kanchanaburi_P1100842.JPG",
+    "commonsTitle": "File:Kanchanaburi P1100842.JPG"
+  },
+  "southern-thailand": {
+    "src": "/images/regions/southern-thailand.jpg",
+    "alt": "Rainforest and limestone landscape of southern Thailand",
+    "author": "Wanjak Atikomchakorn",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1022-khao-sok-national-park-03.jpg",
+    "commonsTitle": "File:1022-khao-sok-national-park-03.jpg"
+  },
+  "thailand-hero": {
+    "src": "/images/countries/thailand-hero.jpg",
+    "alt": "Mountain and rainforest landscape in Thailand",
+    "author": "27Tula",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:COD_0877.jpg",
+    "commonsTitle": "File:COD 0877.jpg"
   }
 }

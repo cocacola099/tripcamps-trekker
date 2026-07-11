@@ -1,6 +1,6 @@
 # Tripcamps Tekker
 
-The Tripcamps marketing/discovery site: explore trekking destinations around the world, read full itineraries, and get in touch to have Tripcamps organise the trip. Content is organised as **Country → Region → Trek**, currently covering **India** (30 treks across 7 regions) and **Nepal** (20 treks across 6 regions) — 50 treks in total. `/shop` is a "coming soon" placeholder for a future trekking-books store.
+The Tripcamps marketing/discovery site: explore trekking destinations around the world, read full itineraries, and get in touch to have Tripcamps organise the trip. Content is organised as **Country → Region → Trek**, currently covering **India** (30 treks across 7 regions), **Nepal** (20 treks across 6 regions), and **Thailand** (10 treks across 3 regions) — 60 treks in total. `/shop` is a "coming soon" placeholder for a future trekking-books store.
 
 Built with [Astro](https://astro.build) (static output), Tailwind CSS v4, and Markdown content collections — no backend required to run.
 

@@ -1,0 +1,16 @@
+[
+  { "slug": "doi-inthanon", "category": "treks", "query": "Doi Inthanon summit Thailand", "alt": "Cloud forest at the summit of Doi Inthanon, Thailand's highest peak" },
+  { "slug": "doi-chiang-dao", "category": "treks", "query": "Doi Chiang Dao limestone mountain Thailand", "alt": "The limestone massif of Doi Chiang Dao" },
+  { "slug": "mae-hong-son-hill-tribe", "category": "treks", "query": "Mae Hong Son hills Thailand landscape", "alt": "Hills and valleys of the Mae Hong Son region" },
+  { "slug": "pai-jungle-canyon", "category": "treks", "query": "Pai Canyon Thailand", "alt": "The layered ridges of Pai Canyon" },
+  { "slug": "doi-ang-khang", "category": "treks", "query": "Doi Ang Khang tea plantation Thailand", "alt": "Tea plantations on the slopes of Doi Ang Khang" },
+  { "slug": "chiang-rai-golden-triangle", "category": "treks", "query": "Golden Triangle Mekong Chiang Rai Thailand", "alt": "The Golden Triangle where Thailand, Laos, and Myanmar meet" },
+  { "slug": "erawan-national-park", "category": "treks", "query": "Erawan Falls Thailand waterfall", "alt": "The emerald tiers of Erawan Falls" },
+  { "slug": "khao-yai", "category": "treks", "query": "Khao Yai National Park waterfall Thailand", "alt": "Rainforest waterfall in Khao Yai National Park" },
+  { "slug": "khao-sok", "category": "treks", "query": "Khao Sok National Park limestone karst Thailand", "alt": "Limestone karsts rising over Khao Sok's rainforest" },
+  { "slug": "khao-luang", "category": "treks", "query": "Khao Luang National Park Thailand", "alt": "Cloud forest slopes of Khao Luang National Park" },
+  { "slug": "northern-thailand", "category": "regions", "query": "Chiang Mai mountains Thailand landscape", "alt": "Mountain landscape of northern Thailand near Chiang Mai" },
+  { "slug": "central-thailand", "category": "regions", "query": "Kanchanaburi river landscape Thailand", "alt": "River and forest landscape near Kanchanaburi" },
+  { "slug": "southern-thailand", "category": "regions", "query": "Khao Sok rainforest limestone Thailand landscape", "alt": "Rainforest and limestone landscape of southern Thailand" },
+  { "slug": "thailand-hero", "category": "countries", "query": "Thailand mountain rainforest landscape", "alt": "Mountain and rainforest landscape in Thailand" }
+]
