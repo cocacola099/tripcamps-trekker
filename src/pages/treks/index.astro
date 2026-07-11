@@ -21,7 +21,7 @@ const orderedRegions = COUNTRY_ORDER.flatMap((countrySlug) =>
 >
   <section class="bg-forest-900 py-16 text-white">
     <div class="mx-auto max-w-6xl px-4 sm:px-6">
-      <p class="text-sm font-semibold uppercase tracking-wide text-terracotta-300">India &amp; Nepal</p>
+      <p class="text-sm font-semibold uppercase tracking-wide font-accent text-terracotta-300">India &amp; Nepal</p>
       <h1 class="mt-2 font-display text-4xl">Explore Trekking Destinations</h1>
       <p class="mt-3 max-w-2xl text-forest-100">
         {allTreks.length} treks across the Himalaya, Ladakh, Kashmir, Sikkim, the Western Ghats, and Nepal — filter below to find your next trail.
@@ -31,19 +31,19 @@ const orderedRegions = COUNTRY_ORDER.flatMap((countrySlug) =>
 
   <section class="mx-auto max-w-6xl px-4 py-10 sm:px-6">
     <div id="filter-bar" class="flex flex-wrap gap-3 border-b border-forest-100 pb-6">
-      <select id="filter-country" class="rounded-full border border-forest-200 bg-white px-4 py-2 text-sm text-forest-900">
+      <select id="filter-country" class="rounded-full border border-forest-200 bg-card px-4 py-2 text-sm text-forest-900">
         <option value="all">All Countries</option>
         {orderedCountries.map((c) => c && <option value={c.data.slug}>{c.data.name}</option>)}
       </select>
-      <select id="filter-region" class="rounded-full border border-forest-200 bg-white px-4 py-2 text-sm text-forest-900">
+      <select id="filter-region" class="rounded-full border border-forest-200 bg-card px-4 py-2 text-sm text-forest-900">
         <option value="all">All Regions</option>
         {orderedRegions.map((r) => r && <option value={r.data.slug} data-country={r.data.countrySlug}>{r.data.name}</option>)}
       </select>
-      <select id="filter-difficulty" class="rounded-full border border-forest-200 bg-white px-4 py-2 text-sm text-forest-900">
+      <select id="filter-difficulty" class="rounded-full border border-forest-200 bg-card px-4 py-2 text-sm text-forest-900">
         <option value="all">All Difficulties</option>
         {DIFFICULTIES.map((d) => <option value={d}>{d}</option>)}
       </select>
-      <select id="filter-duration" class="rounded-full border border-forest-200 bg-white px-4 py-2 text-sm text-forest-900">
+      <select id="filter-duration" class="rounded-full border border-forest-200 bg-card px-4 py-2 text-sm text-forest-900">
         <option value="all">Any Duration</option>
         <option value="short">1–4 Days</option>
         <option value="medium">5–7 Days</option>
@@ -62,7 +62,7 @@ const orderedRegions = COUNTRY_ORDER.flatMap((countrySlug) =>
     <div class="mt-10 flex justify-center">
       <button
         id="load-more"
-        class:list={['rounded-full border border-forest-200 bg-white px-8 py-3 font-semibold text-forest-900 hover:bg-forest-50', { hidden: allTreks.length <= 10 }]}
+        class:list={['rounded-full border border-forest-200 bg-card px-8 py-3 font-semibold text-forest-900 hover:bg-forest-50', { hidden: allTreks.length <= 10 }]}
       >
         {`Load More Treks (${Math.max(allTreks.length - 10, 0)} remaining)`}
       </button>

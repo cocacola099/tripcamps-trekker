@@ -41,10 +41,10 @@ const orderedCountries = COUNTRY_ORDER.map((slug) => {
           <svg class="ml-1 h-3 w-3" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 4l4 4 4-4" /></svg>
         </button>
         <div class="static mt-1 md:absolute md:left-0 md:top-full md:mt-0 md:hidden md:w-[28rem] md:pt-3 md:group-hover:block">
-          <div class="grid grid-cols-1 gap-4 pl-4 md:grid-cols-2 md:gap-6 md:rounded-xl md:border md:border-forest-100 md:bg-white md:p-4 md:pl-4 md:shadow-lg">
+          <div class="grid grid-cols-1 gap-4 pl-4 md:grid-cols-2 md:gap-6 md:rounded-xl md:border md:border-forest-100 md:bg-card md:p-4 md:pl-4 md:shadow-lg">
             {orderedCountries.map((entry) => entry && (
               <div>
-                <a href={withBase(`/${entry.country.data.slug}/`)} class="block px-3 py-1 text-xs font-semibold uppercase tracking-wide text-terracotta-600 hover:text-terracotta-700">
+                <a href={withBase(`/${entry.country.data.slug}/`)} class="block px-3 py-1 text-xs font-semibold uppercase tracking-wide font-accent text-terracotta-600 hover:text-terracotta-700">
                   {entry.country.data.name}
                 </a>
                 <div class="mt-1 grid grid-cols-1 gap-0.5">

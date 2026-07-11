@@ -11,7 +11,7 @@ const treks = (await getCollection('treks')).sort((a, b) => a.data.title.localeC
 >
   <section class="bg-forest-900 py-16 text-white">
     <div class="mx-auto max-w-6xl px-4 sm:px-6">
-      <p class="text-sm font-semibold uppercase tracking-wide text-terracotta-300">Get in touch</p>
+      <p class="text-sm font-semibold uppercase tracking-wide font-accent text-terracotta-300">Get in touch</p>
       <h1 class="mt-2 font-display text-4xl">Let's plan your trek</h1>
       <p class="mt-3 max-w-2xl text-forest-100">
         Whether it's one of our 50+ India or Nepal itineraries or a trek somewhere else in the world, tell us what you have in mind and we'll help you organise it.
@@ -22,18 +22,18 @@ const treks = (await getCollection('treks')).sort((a, b) => a.data.title.localeC
   <section class="mx-auto max-w-6xl px-4 py-14 sm:px-6">
     <div class="grid gap-12 lg:grid-cols-3">
       <div class="space-y-6 lg:col-span-1">
-        <div class="rounded-2xl border border-forest-100 bg-white p-6 shadow-sm">
+        <div class="rounded-2xl border border-forest-100 bg-card p-6 shadow-sm">
           <h2 class="font-display text-lg text-forest-900">Email</h2>
           <a href="mailto:tripcamps.sales@gmail.com" class="mt-1 block text-sm text-terracotta-600 hover:underline">tripcamps.sales@gmail.com</a>
         </div>
-        <div class="rounded-2xl border border-forest-100 bg-white p-6 shadow-sm">
+        <div class="rounded-2xl border border-forest-100 bg-card p-6 shadow-sm">
           <h2 class="font-display text-lg text-forest-900">Response Time</h2>
           <p class="mt-1 text-sm text-sand-900/70">We typically reply within 24 hours with an itinerary and quote tailored to your dates.</p>
         </div>
       </div>
 
       <div class="lg:col-span-2">
-        <form id="contact-form" class="rounded-2xl border border-forest-100 bg-white p-8 shadow-sm">
+        <form id="contact-form" class="rounded-2xl border border-forest-100 bg-card p-8 shadow-sm">
           <div class="grid gap-5 sm:grid-cols-2">
             <div>
               <label for="name" class="text-sm font-medium text-forest-900">Full name</label>

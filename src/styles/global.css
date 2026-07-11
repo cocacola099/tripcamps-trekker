@@ -1,32 +1,44 @@
 @import "tailwindcss";
 
 @theme {
-  --color-forest-950: #10241a;
-  --color-forest-900: #163325;
-  --color-forest-800: #1f4633;
-  --color-forest-700: #2a5c43;
-  --color-forest-600: #397454;
-  --color-forest-500: #4d8f68;
-  --color-forest-400: #74ad87;
-  --color-forest-300: #a3c9ae;
-  --color-forest-200: #cfe3d3;
-  --color-forest-100: #e7f1e8;
-  --color-forest-50: #f4f8f4;
+  /* Pine — secondary brand color (700) and Pine Deep — dark background (900) */
+  --color-forest-950: #1a241d;
+  --color-forest-900: #243329;
+  --color-forest-800: #2c3d33;
+  --color-forest-700: #33483b;
+  --color-forest-600: #435c4c;
+  --color-forest-500: #59735f;
+  --color-forest-400: #7c9483;
+  --color-forest-300: #a7bcac;
+  --color-forest-200: #cbd9cd;
+  --color-forest-100: #e3ebe4;
+  --color-forest-50: #f1f5f1;
 
-  --color-terracotta-700: #a2481f;
-  --color-terracotta-600: #bf5726;
-  --color-terracotta-500: #d9702f;
-  --color-terracotta-400: #e6924f;
-  --color-terracotta-300: #eeb182;
-  --color-terracotta-100: #fbe8d6;
+  /* Terracotta — primary/CTA brand color (500) */
+  --color-terracotta-700: #8a3b22;
+  --color-terracotta-600: #a34b2f;
+  --color-terracotta-500: #c05a38;
+  --color-terracotta-400: #d0805f;
+  --color-terracotta-300: #dfa189;
+  --color-terracotta-100: #f5ded6;
 
-  --color-sand-950: #201a11;
-  --color-sand-900: #2b2318;
-  --color-sand-100: #f6efe1;
-  --color-sand-50: #fbf7ef;
+  /* Paper — light background (50) and Ink — text on light (900) */
+  --color-sand-950: #17140f;
+  --color-sand-900: #211e19;
+  --color-sand-100: #efe9da;
+  --color-sand-50: #f4efe3;
 
-  --font-display: "DM Serif Display", ui-serif, Georgia, serif;
-  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  /* Card — surface color, sits on top of Paper */
+  --color-card: #fbf8f0;
+
+  /* Supporting accents */
+  --color-gold: #c8922e;
+  --color-sky: #6e8b95;
+  --color-clay: #b98a5e;
+
+  --font-display: "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Work Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-accent: "Special Elite", ui-monospace, monospace;
 }
 
 @layer base {
@@ -42,5 +54,6 @@
 
   h1, h2, h3, h4, .font-display {
     font-family: var(--font-display);
+    font-weight: 700;
   }
 }

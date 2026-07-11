@@ -6,13 +6,13 @@ interface Props {
 const { difficulty, class: className = '' } = Astro.props;
 
 const styles: Record<string, string> = {
-  Easy: 'bg-forest-100 text-forest-800',
-  Moderate: 'bg-terracotta-100 text-terracotta-700',
-  Difficult: 'bg-terracotta-300/60 text-terracotta-700',
+  Easy: 'bg-sky/15 text-sky',
+  Moderate: 'bg-gold/15 text-gold',
+  Difficult: 'bg-clay/20 text-clay',
   Strenuous: 'bg-forest-900 text-white',
 };
 ---
 
-<span class={`inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold ${styles[difficulty]} ${className}`}>
+<span class={`inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide font-accent ${styles[difficulty]} ${className}`}>
   {difficulty}
 </span>
