@@ -60,6 +60,7 @@ const treks = (await getCollection('treks')).sort((a, b) => a.data.title.localeC
             <label for="message" class="text-sm font-medium text-forest-900">Tell us about your trip</label>
             <textarea id="message" name="message" rows="5" required placeholder="Dates, group size, experience level..." class="mt-1 w-full rounded-lg border border-forest-200 px-4 py-2.5 text-sm focus:border-forest-500 focus:outline-none"></textarea>
           </div>
+          <input type="checkbox" name="botcheck" class="hidden" style="display:none" tabindex="-1" autocomplete="off" />
           <button type="submit" class="mt-6 rounded-full bg-terracotta-500 px-8 py-3 font-semibold text-white hover:bg-terracotta-600">
             Send Inquiry
           </button>
@@ -71,33 +72,57 @@ const treks = (await getCollection('treks')).sort((a, b) => a.data.title.localeC
 </BaseLayout>
 
 <script>
+  import { WEB3FORMS_ACCESS_KEY, WEB3FORMS_ENDPOINT } from '../data/web3forms';
+
   const CONTACT_EMAIL = 'tripcamps.sales@gmail.com';
   const form = document.getElementById('contact-form') as HTMLFormElement;
   const status = document.getElementById('contact-status');
+  const submitBtn = form?.querySelector('button[type="submit"]') as HTMLButtonElement | null;
 
-  form?.addEventListener('submit', (e) => {
+  form?.addEventListener('submit', async (e) => {
     e.preventDefault();
     const data = new FormData(form);
-    const name = String(data.get('name') || '');
-    const email = String(data.get('email') || '');
-    const phone = String(data.get('phone') || '');
-    const trek = String(data.get('trek') || '');
-    const message = String(data.get('message') || '');
 
-    const subject = `Trek inquiry from ${name}`;
-    const bodyLines = [
-      `Name: ${name}`,
-      `Email: ${email}`,
-      phone && `Phone/WhatsApp: ${phone}`,
-      trek && `Trek of interest: ${trek}`,
-      '',
-      message,
-    ].filter(Boolean);
+    if (data.get('botcheck')) return; // honeypot tripped, silently ignore
 
-    window.location.href = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyLines.join('\n'))}`;
+    const payload = {
+      access_key: WEB3FORMS_ACCESS_KEY,
+      subject: `Trek inquiry from ${data.get('name')}`,
+      name: data.get('name'),
+      email: data.get('email'),
+      phone: data.get('phone'),
+      trek: data.get('trek'),
+      message: data.get('message'),
+    };
 
-    if (status) {
-      status.textContent = 'Opening your email app to send this to us — if it doesn\'t open, email us directly at ' + CONTACT_EMAIL + '.';
+    if (submitBtn) {
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending...';
+    }
+    if (status) status.textContent = '';
+
+    try {
+      const res = await fetch(WEB3FORMS_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify(payload),
+      });
+      const result = await res.json();
+      if (result.success) {
+        form.reset();
+        if (status) status.textContent = "Thanks! We've received your inquiry and will reply within 24 hours.";
+      } else {
+        throw new Error(result.message || 'Submission failed');
+      }
+    } catch {
+      if (status) {
+        status.textContent = `Something went wrong sending your inquiry — please email us directly at ${CONTACT_EMAIL}.`;
+      }
+    } finally {
+      if (submitBtn) {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Send Inquiry';
+      }
     }
   });
 </script>

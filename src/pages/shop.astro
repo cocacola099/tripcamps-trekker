@@ -41,18 +41,52 @@ import { withBase } from '../utils/url';
 </BaseLayout>
 
 <script>
+  import { WEB3FORMS_ACCESS_KEY, WEB3FORMS_ENDPOINT } from '../data/web3forms';
+
   const NOTIFY_EMAIL = 'tripcamps.sales@gmail.com';
   const form = document.getElementById('shop-notify-form') as HTMLFormElement;
   const status = document.getElementById('shop-notify-status');
+  const submitBtn = form?.querySelector('button[type="submit"]') as HTMLButtonElement | null;
 
-  form?.addEventListener('submit', (e) => {
+  form?.addEventListener('submit', async (e) => {
     e.preventDefault();
     const email = (document.getElementById('shop-email') as HTMLInputElement).value;
-    const subject = 'Notify me when the shop opens';
-    const body = `Please notify me at ${email} when the Tripcamps shop opens.`;
-    window.location.href = `mailto:${NOTIFY_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    if (status) {
-      status.textContent = "Opening your email app to send this to us — we'll notify you at that address.";
+
+    const payload = {
+      access_key: WEB3FORMS_ACCESS_KEY,
+      subject: 'Shop notify-me signup',
+      email,
+      message: `Please notify ${email} when the Tripcamps shop opens.`,
+    };
+
+    if (submitBtn) {
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending...';
+    }
+    if (status) status.textContent = '';
+
+    try {
+      const res = await fetch(WEB3FORMS_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify(payload),
+      });
+      const result = await res.json();
+      if (result.success) {
+        form.reset();
+        if (status) status.textContent = "Thanks! We'll email you the moment the shop opens.";
+      } else {
+        throw new Error(result.message || 'Submission failed');
+      }
+    } catch {
+      if (status) {
+        status.textContent = `Something went wrong — please email us directly at ${NOTIFY_EMAIL}.`;
+      }
+    } finally {
+      if (submitBtn) {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Notify Me';
+      }
     }
   });
 </script>
