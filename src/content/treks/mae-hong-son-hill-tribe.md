@@ -40,7 +40,7 @@ heroImage:
   author: "Vyacheslav Argenberg"
   license: "CC BY 4.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Mae_Hong_Son,_Forest_on_the_hills,_Thailand.jpg"
-seoTitle: "Mae Hong Son Hill Tribe Trek Guide — 4-Day Itinerary | Tripcamps"
+seoTitle: "Mae Hong Son Hill Tribe Trek Guide | 4-Day Itinerary | Tripcamps"
 seoDescription: "Plan the Mae Hong Son hill tribe trek: itinerary, villages visited, and best season for this remote northern Thailand trekking route."
 ---
 

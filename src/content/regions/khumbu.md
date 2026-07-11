@@ -11,7 +11,7 @@ heroImage:
   author: "Jone Jones"
   license: "CC BY-SA 3.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Beyond_Syangboche.jpg"
-seoTitle: "Khumbu (Everest Region) Treks — Nepal | Tripcamps"
+seoTitle: "Khumbu (Everest Region) Treks | Nepal | Tripcamps"
 seoDescription: "Explore 6 treks in Nepal's Khumbu region: Everest Base Camp, Gokyo Lakes, the Three Passes, Renjo La, Cho La, and the classic Everest View trek."
 ---
 

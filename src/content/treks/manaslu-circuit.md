@@ -70,7 +70,7 @@ heroImage:
   author: "Nabin K. Sapkota"
   license: "CC BY-SA 4.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Larke_La_Manaslu_Circuit_109.jpg"
-seoTitle: "Manaslu Circuit Trek — 14-Day Itinerary & Guide | Tripcamps"
+seoTitle: "Manaslu Circuit Trek | 14-Day Itinerary & Guide | Tripcamps"
 seoDescription: "Plan the Manaslu Circuit trek: 14-day itinerary over Larkya La, permits, best season, and how it compares to the Annapurna Circuit."
 featured: true
 ---

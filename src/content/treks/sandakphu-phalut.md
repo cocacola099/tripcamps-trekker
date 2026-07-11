@@ -46,7 +46,7 @@ heroImage:
   author: "Abhishek.ghosh1984"
   license: "CC BY-SA 4.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Kangchenjunga_(Kanchenjunga)_from_Singalila_National_Park,_Sandakphu.jpg"
-seoTitle: "Sandakphu Phalut Trek — 6-Day Itinerary & Guide | Tripcamps"
+seoTitle: "Sandakphu Phalut Trek | 6-Day Itinerary & Guide | Tripcamps"
 seoDescription: "Plan the Sandakphu-Phalut trek along the Singalila Ridge: 6-day itinerary, sunrise views of Everest and Kanchenjunga, best season."
 featured: true
 ---

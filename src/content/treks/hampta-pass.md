@@ -43,7 +43,7 @@ heroImage:
   author: "Nvvchar"
   license: "CC BY-SA 3.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Aerail_view_of_Lahaul_valley_in_winter.JPG"
-seoTitle: "Hampta Pass Trek — 5-Day Itinerary with Chandratal | Tripcamps"
+seoTitle: "Hampta Pass Trek | 5-Day Itinerary with Chandratal | Tripcamps"
 seoDescription: "Plan the Hampta Pass trek from Manali: 5-day itinerary, Chandratal Lake extension, best season, and how to reach the trailhead."
 featured: true
 ---

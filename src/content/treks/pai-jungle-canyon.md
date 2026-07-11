@@ -34,7 +34,7 @@ heroImage:
   author: "Bernhard T"
   license: "CC BY-SA 3.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Pai_Canyon,_Thailand_2012-12-08_-_panoramio.jpg"
-seoTitle: "Pai Jungle & Canyon Trek Guide — 2-Day Itinerary | Tripcamps"
+seoTitle: "Pai Jungle & Canyon Trek Guide | 2-Day Itinerary | Tripcamps"
 seoDescription: "Plan the Pai jungle and canyon trek: itinerary, hot springs stop, and best season for this easy northern Thailand walk."
 ---
 

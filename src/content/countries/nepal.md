@@ -9,7 +9,7 @@ heroImage:
   author: "Skrissh2013"
   license: "CC BY-SA 3.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Himalaya_in_Panorama.jpg"
-seoTitle: "Nepal Treks — 20 Trekking Destinations Across 6 Regions | Tripcamps"
+seoTitle: "Nepal Treks | 20 Trekking Destinations Across 6 Regions | Tripcamps"
 seoDescription: "Explore 20 trekking destinations across Nepal: Khumbu (Everest), Annapurna, Langtang, Manaslu, Mustang, and Kanchenjunga."
 ---
 

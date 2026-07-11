@@ -46,7 +46,7 @@ heroImage:
   author: "Arijit95jitu"
   license: "CC BY-SA 4.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Brahmatal_camp_site.jpg"
-seoTitle: "Brahmatal Trek — Winter Snow Trek Itinerary & Guide | Tripcamps"
+seoTitle: "Brahmatal Trek | Winter Snow Trek Itinerary & Guide | Tripcamps"
 seoDescription: "Plan the Brahmatal winter trek: 6-day itinerary from Lohajung, best season, difficulty, and views of Trishul and Nanda Ghunti."
 featured: false
 ---

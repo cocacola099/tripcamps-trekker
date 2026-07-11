@@ -46,7 +46,7 @@ heroImage:
   author: "Pratap Baniya"
   license: "CC BY-SA 4.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Gosainkunda_lake.JPG"
-seoTitle: "Gosaikunda Trek — 6-Day Itinerary & Guide | Tripcamps"
+seoTitle: "Gosaikunda Trek | 6-Day Itinerary & Guide | Tripcamps"
 seoDescription: "Plan the Gosaikunda trek: a 6-day itinerary to a sacred Himalayan lake in the Langtang region, near Kathmandu."
 featured: false
 ---

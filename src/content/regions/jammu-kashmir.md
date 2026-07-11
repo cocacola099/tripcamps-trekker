@@ -11,7 +11,7 @@ heroImage:
   author: "Kashmira Dakshit"
   license: "CC BY-SA 4.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Sonmarg_valley_1.1.jpg"
-seoTitle: "Kashmir Treks — Great Lakes, Tarsar Marsar & Gulmarg | Tripcamps"
+seoTitle: "Kashmir Treks | Great Lakes, Tarsar Marsar & Gulmarg | Tripcamps"
 seoDescription: "Trek Kashmir's alpine lake circuits: the Kashmir Great Lakes, Tarsar Marsar, and the high-altitude Alpather Lake above Gulmarg."
 ---
 

@@ -61,7 +61,7 @@ heroImage:
   author: "Ra.manimtech"
   license: "CC BY-SA 4.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Mountain_view_from_Thuskeo_Dhar.jpg"
-seoTitle: "Pin Parvati Pass Trek — 11-Day Expedition Itinerary | Tripcamps"
+seoTitle: "Pin Parvati Pass Trek | 11-Day Expedition Itinerary | Tripcamps"
 seoDescription: "Plan the Pin Parvati Pass crossing from Kasol to Spiti: an 11-day expedition-grade itinerary, difficulty, permits, and best season."
 featured: false
 ---

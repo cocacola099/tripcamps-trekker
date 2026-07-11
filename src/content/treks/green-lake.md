@@ -70,7 +70,7 @@ heroImage:
   author: "Sunil"
   license: "CC BY-SA 3.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Yumthang_Vally_and_the_river_in_the_background.jpg"
-seoTitle: "Green Lake Trek — 14-Day Kanchenjunga Base Camp Itinerary | Tripcamps"
+seoTitle: "Green Lake Trek | 14-Day Kanchenjunga Base Camp Itinerary | Tripcamps"
 seoDescription: "Plan the Green Lake trek in North Sikkim: a 14-day expedition-grade itinerary via the Zemu Glacier, permits, and difficulty."
 featured: false
 ---

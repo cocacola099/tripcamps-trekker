@@ -49,7 +49,7 @@ heroImage:
   author: "Chandra Chakradhar"
   license: "CC BY-SA 4.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Namche.jpg"
-seoTitle: "Everest View Trek — 7-Day Short Khumbu Itinerary | Tripcamps"
+seoTitle: "Everest View Trek | 7-Day Short Khumbu Itinerary | Tripcamps"
 seoDescription: "Plan the Everest View trek: a shorter 7-day Khumbu itinerary to Everest views via Namche Bazaar and Tengboche, without full Base Camp altitude."
 featured: false
 ---

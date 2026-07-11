@@ -46,7 +46,7 @@ heroImage:
   author: "Ghodki"
   license: "CC BY-SA 4.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Kedarkantha_1.jpg"
-seoTitle: "Kedarkantha Trek Guide — 6-Day Itinerary, Best Season & Route | Tripcamps"
+seoTitle: "Kedarkantha Trek Guide | 6-Day Itinerary, Best Season & Route | Tripcamps"
 seoDescription: "Plan the Kedarkantha winter trek: day-wise itinerary, best season, difficulty, permits and how to reach Sankri. India's most popular snow trek."
 featured: true
 ---

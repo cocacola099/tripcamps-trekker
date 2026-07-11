@@ -37,7 +37,7 @@ heroImage:
   author: "Vyacheslav Argenberg"
   license: "CC BY 4.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Khao_Sok,_Cheow_Lan_Lake,_Limestone_rock_formations,_Thailand.jpg"
-seoTitle: "Khao Sok Rainforest Trek Guide — 3-Day Itinerary | Tripcamps"
+seoTitle: "Khao Sok Rainforest Trek Guide | 3-Day Itinerary | Tripcamps"
 seoDescription: "Plan the Khao Sok rainforest trek: itinerary, Cheow Lan Lake boat crossing, and best season in southern Thailand."
 featured: true
 ---

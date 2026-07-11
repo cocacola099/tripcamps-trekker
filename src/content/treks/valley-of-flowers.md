@@ -46,7 +46,7 @@ heroImage:
   author: "Guptaele"
   license: "CC BY-SA 4.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Valley_of_Flowers_National_Park_24.JPG"
-seoTitle: "Valley of Flowers Trek — Itinerary, Best Time & Route Guide | Tripcamps"
+seoTitle: "Valley of Flowers Trek | Itinerary, Best Time & Route Guide | Tripcamps"
 seoDescription: "Plan your Valley of Flowers trek: 6-day itinerary via Govindghat and Ghangaria, best monsoon bloom months, and the Hemkund Sahib side trip."
 featured: true
 ---

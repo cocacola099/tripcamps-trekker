@@ -9,7 +9,7 @@ heroImage:
   author: "Himesh23"
   license: "CC BY-SA 4.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Heart_of_the_Himalayas.jpg"
-seoTitle: "India Treks — 30+ Trekking Destinations Across 7 Regions | Tripcamps"
+seoTitle: "India Treks | 30+ Trekking Destinations Across 7 Regions | Tripcamps"
 seoDescription: "Explore 30+ trekking destinations across India: Uttarakhand, Himachal Pradesh, Ladakh, Jammu & Kashmir, Sikkim, West Bengal, and Maharashtra."
 ---
 

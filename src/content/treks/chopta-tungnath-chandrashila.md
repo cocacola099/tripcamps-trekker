@@ -34,7 +34,7 @@ heroImage:
   author: "Sriramskumar"
   license: "CC BY-SA 4.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Monk_at_the_edge_of_Chandrasila_peak.jpg"
-seoTitle: "Chopta Tungnath Chandrashila Trek — 2-Day Itinerary | Tripcamps"
+seoTitle: "Chopta Tungnath Chandrashila Trek | 2-Day Itinerary | Tripcamps"
 seoDescription: "Plan the Chopta-Tungnath-Chandrashila trek: a short 2-day itinerary to the world's highest Shiva temple and a Himalayan summit sunrise."
 featured: false
 ---

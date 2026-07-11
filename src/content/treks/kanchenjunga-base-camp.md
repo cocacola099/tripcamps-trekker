@@ -88,7 +88,7 @@ heroImage:
   author: "Danielvandermaas"
   license: "CC BY-SA 4.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Kanchenjunga-north.jpg"
-seoTitle: "Kanchenjunga Base Camp Trek — 20-Day Itinerary & Guide | Tripcamps"
+seoTitle: "Kanchenjunga Base Camp Trek | 20-Day Itinerary & Guide | Tripcamps"
 seoDescription: "Plan the Kanchenjunga Base Camp trek in far-eastern Nepal: a 20-day expedition-grade itinerary to Pang Pema, permits, and best season."
 featured: true
 ---

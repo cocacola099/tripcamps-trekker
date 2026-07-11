@@ -49,7 +49,7 @@ heroImage:
   author: "Jean-Pierre Dalbéra from Paris, France"
   license: "CC BY 2.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Le_Gan_Chenpo_(Himalaya,_N%C3%A9pal)_(8446635289).jpg"
-seoTitle: "Langtang Valley Trek — 7-Day Itinerary & Guide | Tripcamps"
+seoTitle: "Langtang Valley Trek | 7-Day Itinerary & Guide | Tripcamps"
 seoDescription: "Plan the Langtang Valley trek: a 7-day itinerary from Syabrubesi to Kyanjin Gompa and Tserko Ri, the closest major trek to Kathmandu."
 featured: true
 ---

@@ -37,7 +37,7 @@ heroImage:
   author: "KOSIN SUKHUM"
   license: "CC BY-SA 4.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Chiang_Dao_National_Park_Chiang_Mai_Thailand.jpg"
-seoTitle: "Doi Chiang Dao Trek Guide — 3-Day Itinerary & Permits | Tripcamps"
+seoTitle: "Doi Chiang Dao Trek Guide | 3-Day Itinerary & Permits | Tripcamps"
 seoDescription: "Plan the Doi Chiang Dao trek: itinerary, permits, and best season for climbing Thailand's dramatic limestone massif."
 ---
 

@@ -34,7 +34,7 @@ heroImage:
   author: "Hamehta3 at English Wikipedia"
   license: "Public domain"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Kalsubai.jpg"
-seoTitle: "Kalsubai Peak Trek — Weekend Itinerary from Mumbai & Pune | Tripcamps"
+seoTitle: "Kalsubai Peak Trek | Weekend Itinerary from Mumbai & Pune | Tripcamps"
 seoDescription: "Plan the Kalsubai trek, Maharashtra's highest peak: a short weekend itinerary from Mumbai or Pune, difficulty, and best season."
 featured: true
 ---

@@ -11,7 +11,7 @@ heroImage:
   author: "Q-lieb-in"
   license: "CC BY-SA 4.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Trekker_tourist_during_hiking_in_Langtang_national_park.jpg"
-seoTitle: "Langtang Region Treks — Nepal | Tripcamps"
+seoTitle: "Langtang Region Treks | Nepal | Tripcamps"
 seoDescription: "Explore 3 treks in Nepal's Langtang region: Langtang Valley, the sacred Gosaikunda lake, and the Helambu village trek."
 ---
 

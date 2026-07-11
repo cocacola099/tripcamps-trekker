@@ -37,7 +37,7 @@ heroImage:
   author: "Rudolph.A.furtado"
   license: "CC0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Footprints_in_the_snow_on_slopes_of_Mount_Apharwat..JPG"
-seoTitle: "Gulmarg Alpather Lake Trek — 3-Day Itinerary & Guide | Tripcamps"
+seoTitle: "Gulmarg Alpather Lake Trek | 3-Day Itinerary & Guide | Tripcamps"
 seoDescription: "Plan the Alpather Lake trek above Gulmarg: a 3-day itinerary to a glacial lake on Mount Apharwat, best season and difficulty."
 featured: false
 ---

@@ -55,7 +55,7 @@ heroImage:
   author: "Sharadgurung7711"
   license: "CC BY-SA 4.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:TsumValleyGorkha.jpg"
-seoTitle: "Tsum Valley Trek — 9-Day Itinerary & Guide | Tripcamps"
+seoTitle: "Tsum Valley Trek | 9-Day Itinerary & Guide | Tripcamps"
 seoDescription: "Plan the Tsum Valley trek: a 9-day itinerary to a restricted Tibetan Buddhist valley branching off the Manaslu Circuit."
 featured: false
 ---

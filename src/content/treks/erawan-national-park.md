@@ -31,7 +31,7 @@ heroImage:
   author: "The original uploader was Drimascus at German Wikipedia."
   license: "CC BY-SA 3.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Erawan_waterfall.JPG"
-seoTitle: "Erawan National Park Trek Guide — Waterfall Day Hike | Tripcamps"
+seoTitle: "Erawan National Park Trek Guide | Waterfall Day Hike | Tripcamps"
 seoDescription: "Plan the Erawan National Park waterfall trek: itinerary, swimming tiers, and best season near Kanchanaburi, Thailand."
 featured: true
 ---

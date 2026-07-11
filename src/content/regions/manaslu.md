@@ -11,7 +11,7 @@ heroImage:
   author: "Radgeshree"
   license: "CC BY-SA 4.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Bhimthang.jpg"
-seoTitle: "Manaslu Region Treks — Nepal | Tripcamps"
+seoTitle: "Manaslu Region Treks | Nepal | Tripcamps"
 seoDescription: "Explore 2 treks in Nepal's Manaslu region: the Manaslu Circuit and the remote, restricted Tsum Valley."
 ---
 

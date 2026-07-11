@@ -11,7 +11,7 @@ heroImage:
   author: "Deror Avi"
   license: "CC BY-SA 3.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Kanchanaburi_P1100842.JPG"
-seoTitle: "Central Thailand Treks — Kanchanaburi & Khao Yai | Tripcamps"
+seoTitle: "Central Thailand Treks | Kanchanaburi & Khao Yai | Tripcamps"
 seoDescription: "Explore 2 treks in Central Thailand: the tiered waterfalls of Erawan National Park and the rainforest wildlife trails of Khao Yai National Park."
 ---
 

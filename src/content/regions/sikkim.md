@@ -11,7 +11,7 @@ heroImage:
   author: "Tomabarker"
   license: "CC BY 3.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Kangchenjunga_PangPema.JPG"
-seoTitle: "Sikkim Treks — Goecha La, Dzongri & Green Lake | Tripcamps"
+seoTitle: "Sikkim Treks | Goecha La, Dzongri & Green Lake | Tripcamps"
 seoDescription: "Trek Sikkim's Kanchenjunga trails: Dzongri's viewpoint, Goecha La's close-up massif views, and the remote Green Lake base camp route."
 ---
 

@@ -67,7 +67,7 @@ heroImage:
   author: "Aabhyas"
   license: "CC BY-SA 4.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:At_tilicho_lake.jpg"
-seoTitle: "Tilicho Lake Trek — 13-Day Itinerary & Guide | Tripcamps"
+seoTitle: "Tilicho Lake Trek | 13-Day Itinerary & Guide | Tripcamps"
 seoDescription: "Plan the Tilicho Lake trek: 13-day itinerary combining one of the world's highest lakes with the Annapurna Circuit's Thorong La crossing."
 featured: false
 ---

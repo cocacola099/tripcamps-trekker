@@ -82,7 +82,7 @@ heroImage:
   author: "Pravin Mishra"
   license: "CC BY-SA 4.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Himalayan_Wilderness.jpg"
-seoTitle: "Everest Three Passes Trek — 18-Day Itinerary & Guide | Tripcamps"
+seoTitle: "Everest Three Passes Trek | 18-Day Itinerary & Guide | Tripcamps"
 seoDescription: "Plan the Everest Three Passes trek: an 18-day itinerary combining Everest Base Camp, Gokyo Lakes, and Kongma La, Cho La and Renjo La."
 featured: false
 ---

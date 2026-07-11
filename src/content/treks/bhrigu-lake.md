@@ -40,7 +40,7 @@ heroImage:
   author: "Harsh.dattani"
   license: "CC BY 3.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:FrozenBrighulake.jpg"
-seoTitle: "Bhrigu Lake Trek — 4-Day Itinerary from Manali | Tripcamps"
+seoTitle: "Bhrigu Lake Trek | 4-Day Itinerary from Manali | Tripcamps"
 seoDescription: "Plan the Bhrigu Lake trek from Gulaba near Manali: a 4-day itinerary to a high-altitude alpine lake, best season and difficulty."
 featured: false
 ---

@@ -40,7 +40,7 @@ heroImage:
   author: "Usha Pande"
   license: "CC BY-SA 4.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Sunrise_behind_the_Annapurna_range._View_from_Poonhill.jpg"
-seoTitle: "Poon Hill Trek — 4-Day Itinerary via Ghorepani | Tripcamps"
+seoTitle: "Poon Hill Trek | 4-Day Itinerary via Ghorepani | Tripcamps"
 seoDescription: "Plan the Poon Hill trek: an easy 4-day itinerary via Ghorepani for sunrise views of the Annapurna and Dhaulagiri ranges."
 featured: false
 ---

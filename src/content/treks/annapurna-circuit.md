@@ -76,7 +76,7 @@ heroImage:
   author: "Sergey Ashmarin"
   license: "CC BY-SA 3.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Tea-house_on_Thorong_La_pass_-_Annapurna_Circuit,_Nepal_-_panoramio.jpg"
-seoTitle: "Annapurna Circuit Trek — 16-Day Itinerary & Guide | Tripcamps"
+seoTitle: "Annapurna Circuit Trek | 16-Day Itinerary & Guide | Tripcamps"
 seoDescription: "Plan the Annapurna Circuit trek: full 16-day itinerary over Thorong La and through the Kali Gandaki Gorge, permits and best season."
 featured: false
 ---

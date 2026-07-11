@@ -46,7 +46,7 @@ heroImage:
   author: "YUVRAJ ANAND"
   license: "CC BY-SA 4.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Sand_dunes_in_Nubra_Valley,_Ladakh.jpg"
-seoTitle: "Nubra Valley Trek — 6-Day Itinerary via Lasermo La | Tripcamps"
+seoTitle: "Nubra Valley Trek | 6-Day Itinerary via Lasermo La | Tripcamps"
 seoDescription: "Plan the Nubra Valley trek from Leh: 6-day itinerary crossing Lasermo La to the sand dunes and camels of Nubra."
 featured: false
 ---

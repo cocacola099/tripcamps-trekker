@@ -58,7 +58,7 @@ heroImage:
   author: "Vyacheslav Argenberg"
   license: "CC BY 4.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Gokyo_Ri,_Nepal,_Himalayas.jpg"
-seoTitle: "Gokyo Lakes Trek — 10-Day Itinerary & Guide | Tripcamps"
+seoTitle: "Gokyo Lakes Trek | 10-Day Itinerary & Guide | Tripcamps"
 seoDescription: "Plan the Gokyo Lakes trek in the Khumbu: 10-day itinerary via Gokyo Ri, a quieter alternative to Everest Base Camp."
 featured: false
 ---

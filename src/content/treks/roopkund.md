@@ -52,7 +52,7 @@ heroImage:
   author: "Schwiki"
   license: "CC BY-SA 4.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Roopkund_Lake.jpg"
-seoTitle: "Roopkund Trek — Skeleton Lake Itinerary & Difficulty Guide | Tripcamps"
+seoTitle: "Roopkund Trek | Skeleton Lake Itinerary & Difficulty Guide | Tripcamps"
 seoDescription: "Complete Roopkund trek guide: 8-day itinerary via Bedni Bugyal, best season, difficulty level, and how to reach Lohajung."
 featured: false
 ---

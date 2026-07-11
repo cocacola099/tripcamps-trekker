@@ -11,7 +11,7 @@ heroImage:
   author: "Rahul bag"
   license: "CC BY-SA 4.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:At_Kalipokhri_Indo-Nepal_Border.jpg"
-seoTitle: "West Bengal Treks — Sandakphu & the Singalila Ridge | Tripcamps"
+seoTitle: "West Bengal Treks | Sandakphu & the Singalila Ridge | Tripcamps"
 seoDescription: "Trek the Singalila Ridge above Darjeeling for sunrise views of Everest and Kanchenjunga on the Sandakphu-Phalut trail."
 ---
 

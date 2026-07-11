@@ -34,7 +34,7 @@ heroImage:
   author: "Nikhil.m.sharma"
   license: "CC BY-SA 4.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Kheerganga,_Himachal_Pradesh.jpg"
-seoTitle: "Kheerganga Trek — 2-Day Itinerary via Barshaini | Tripcamps"
+seoTitle: "Kheerganga Trek | 2-Day Itinerary via Barshaini | Tripcamps"
 seoDescription: "Plan the Kheerganga trek in the Parvati Valley: an easy 2-day itinerary to a meadow with natural hot springs."
 featured: false
 ---

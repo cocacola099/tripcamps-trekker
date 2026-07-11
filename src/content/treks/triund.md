@@ -34,7 +34,7 @@ heroImage:
   author: "Kiran Jonnalagadda from Bangalore, India"
   license: "CC BY-SA 2.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Triund_sunrise_over_the_Dhauladhars_(8680900740).jpg"
-seoTitle: "Triund Trek — 2-Day Weekend Itinerary from McLeod Ganj | Tripcamps"
+seoTitle: "Triund Trek | 2-Day Weekend Itinerary from McLeod Ganj | Tripcamps"
 seoDescription: "Plan the Triund trek from McLeod Ganj: an easy 2-day itinerary with Dhauladhar range views, ideal for a first Himalayan trek."
 featured: false
 ---

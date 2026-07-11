@@ -34,7 +34,7 @@ heroImage:
   author: "Vyacheslav Argenberg"
   license: "CC BY 4.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Doi_Inthanon,_Royal_Stupa_2,_Thailand.jpg"
-seoTitle: "Doi Inthanon Trek Guide — 2-Day Itinerary & Best Season | Tripcamps"
+seoTitle: "Doi Inthanon Trek Guide | 2-Day Itinerary & Best Season | Tripcamps"
 seoDescription: "Plan the Doi Inthanon trek: itinerary, best season, and how to reach Thailand's highest peak from Chiang Mai."
 featured: true
 ---

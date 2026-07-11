@@ -11,7 +11,7 @@ heroImage:
   author: "Gagandev007"
   license: "CC BY-SA 3.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Annapurna_Ranges_with_Basecamp,_Mar_2015.JPG"
-seoTitle: "Annapurna Region Treks — Nepal | Tripcamps"
+seoTitle: "Annapurna Region Treks | Nepal | Tripcamps"
 seoDescription: "Explore 6 treks in Nepal's Annapurna region: Annapurna Base Camp, the Annapurna Circuit, Poon Hill, Mardi Himal, Tilicho Lake, and Khopra Ridge."
 ---
 

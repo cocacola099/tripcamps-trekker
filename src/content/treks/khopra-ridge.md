@@ -52,7 +52,7 @@ heroImage:
   author: "Nabin K. Sapkota"
   license: "CC BY-SA 4.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:On_the_way_to_Khopra_Hill_(105).jpg"
-seoTitle: "Khopra Ridge Trek — 8-Day Itinerary & Guide | Tripcamps"
+seoTitle: "Khopra Ridge Trek | 8-Day Itinerary & Guide | Tripcamps"
 seoDescription: "Plan the Khopra Ridge trek: an 8-day itinerary via Poon Hill and community-run lodges, a quieter alternative in the Annapurna region."
 featured: false
 ---

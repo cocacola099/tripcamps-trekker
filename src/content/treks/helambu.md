@@ -43,7 +43,7 @@ heroImage:
   author: "Bernard Gagnon"
   license: "CC BY-SA 3.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Malemchigaon.jpg"
-seoTitle: "Helambu Trek — 5-Day Itinerary Near Kathmandu | Tripcamps"
+seoTitle: "Helambu Trek | 5-Day Itinerary Near Kathmandu | Tripcamps"
 seoDescription: "Plan the Helambu trek: an easy 5-day itinerary from Sundarijal, the gentlest multi-day trek within reach of Kathmandu."
 featured: false
 ---

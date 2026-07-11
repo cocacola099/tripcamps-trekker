@@ -11,7 +11,7 @@ heroImage:
   author: "Timothy A. Gonsalves"
   license: "CC BY-SA 4.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Road_Padum_Zanskar_Range_Jun24_A7CR_00818.jpg"
-seoTitle: "Ladakh Treks — Markha Valley, Chadar & Stok Kangri | Tripcamps"
+seoTitle: "Ladakh Treks | Markha Valley, Chadar & Stok Kangri | Tripcamps"
 seoDescription: "Trek Ladakh's trans-Himalayan landscape: Markha Valley's villages, the winter Chadar frozen-river crossing, and the summit trail up Stok Kangri."
 ---
 

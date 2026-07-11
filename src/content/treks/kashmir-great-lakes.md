@@ -52,7 +52,7 @@ heroImage:
   author: "Mehrajmir13"
   license: "CC BY-SA 3.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Vishansar_lake2.jpg"
-seoTitle: "Kashmir Great Lakes Trek — 8-Day Itinerary & Guide | Tripcamps"
+seoTitle: "Kashmir Great Lakes Trek | 8-Day Itinerary & Guide | Tripcamps"
 seoDescription: "Plan the Kashmir Great Lakes trek from Sonmarg to Naranag: 8-day itinerary past seven alpine lakes, best season, and difficulty."
 featured: true
 ---

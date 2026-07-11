@@ -37,7 +37,7 @@ heroImage:
   author: "Moheen Reeyad"
   license: "CC BY-SA 4.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Beas_Kund_(03).jpg"
-seoTitle: "Beas Kund Trek — 3-Day Itinerary from Solang Valley | Tripcamps"
+seoTitle: "Beas Kund Trek | 3-Day Itinerary from Solang Valley | Tripcamps"
 seoDescription: "Plan the Beas Kund trek near Manali: a 3-day itinerary to the glacial source of the Beas river, easy difficulty and short travel time."
 featured: false
 ---

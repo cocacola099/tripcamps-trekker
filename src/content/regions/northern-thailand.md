@@ -11,7 +11,7 @@ heroImage:
   author: "Vyacheslav Argenberg"
   license: "CC BY 4.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Huai_Nam_Dang_National_Park,_Thailand.jpg"
-seoTitle: "Northern Thailand Treks — Chiang Mai & Chiang Rai | Tripcamps"
+seoTitle: "Northern Thailand Treks | Chiang Mai & Chiang Rai | Tripcamps"
 seoDescription: "Explore 6 treks in Northern Thailand: Doi Inthanon, Doi Chiang Dao, Mae Hong Son, Pai, Doi Ang Khang, and the Golden Triangle near Chiang Rai."
 ---
 

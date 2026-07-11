@@ -58,7 +58,7 @@ heroImage:
   author: "Sunuwargr"
   license: "CC BY-SA 4.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:A_Lens_into_the_Forbidden_Kingdom.jpg"
-seoTitle: "Upper Mustang Trek — 10-Day Itinerary & Guide | Tripcamps"
+seoTitle: "Upper Mustang Trek | 10-Day Itinerary & Guide | Tripcamps"
 seoDescription: "Plan the Upper Mustang trek to Lo Manthang: 10-day itinerary, permits, and why Mustang is trekkable even during monsoon."
 featured: true
 ---

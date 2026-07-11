@@ -37,7 +37,7 @@ heroImage:
   author: "For a gallery of some more of my uploaded pictures see:  here."
   license: "CC0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:1985_at_Golden_Triangle._Small_boats_on_Mekong_River._Confluence_Ruak_River._Spielvogel_Archiv.jpg"
-seoTitle: "Chiang Rai Golden Triangle Trek Guide — 3-Day Itinerary | Tripcamps"
+seoTitle: "Chiang Rai Golden Triangle Trek Guide | 3-Day Itinerary | Tripcamps"
 seoDescription: "Plan the Chiang Rai Golden Triangle trek: itinerary, hill-tribe villages, and Mekong boat ride in northern Thailand."
 featured: true
 ---

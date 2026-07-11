@@ -52,7 +52,7 @@ heroImage:
   author: "Chris Hunkeler from Carlsbad, California, USA"
   license: "CC BY-SA 2.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Beyond_Chalak_(48993473073).jpg"
-seoTitle: "Markha Valley Trek — 8-Day Ladakh Itinerary & Guide | Tripcamps"
+seoTitle: "Markha Valley Trek | 8-Day Ladakh Itinerary & Guide | Tripcamps"
 seoDescription: "Plan the Markha Valley trek in Ladakh: 8-day itinerary via Kongmaru La, permits, best season, and how to acclimatise in Leh."
 featured: true
 ---

@@ -55,7 +55,7 @@ heroImage:
   author: "Samdesherpa"
   license: "CC BY-SA 4.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Annapurna_Base_Camp_with_snow.jpg"
-seoTitle: "Annapurna Base Camp Trek — 9-Day Itinerary & Guide | Tripcamps"
+seoTitle: "Annapurna Base Camp Trek | 9-Day Itinerary & Guide | Tripcamps"
 seoDescription: "Plan the Annapurna Base Camp trek: 9-day itinerary via Poon Hill and Chhomrong, best season, permits, and how to reach Nayapul."
 featured: true
 ---

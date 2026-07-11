@@ -34,7 +34,7 @@ heroImage:
   author: "Ditsakul"
   license: "CC BY-SA 3.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Misty_Morning_at_Doi_Angkhang_Mountain,_Chiangmai,_Thailand.jpg"
-seoTitle: "Doi Ang Khang Trek Guide — 2-Day Itinerary & Best Season | Tripcamps"
+seoTitle: "Doi Ang Khang Trek Guide | 2-Day Itinerary & Best Season | Tripcamps"
 seoDescription: "Plan the Doi Ang Khang tea trail trek: itinerary, plantation walk, and best season near the Myanmar border in northern Thailand."
 ---
 

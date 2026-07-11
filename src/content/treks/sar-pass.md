@@ -43,7 +43,7 @@ heroImage:
   author: "Amishvajpayee"
   license: "CC BY 3.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:2009_Parvati_and_Spiti_Valley_(15).JPG"
-seoTitle: "Sar Pass Trek — 5-Day Itinerary via Kasol | Tripcamps"
+seoTitle: "Sar Pass Trek | 5-Day Itinerary via Kasol | Tripcamps"
 seoDescription: "Plan the Sar Pass trek in the Parvati Valley: a 5-day itinerary from Kasol, snow conditions, best season, and difficulty."
 featured: false
 ---

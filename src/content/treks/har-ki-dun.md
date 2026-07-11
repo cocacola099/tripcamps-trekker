@@ -49,7 +49,7 @@ heroImage:
   author: "Metanish"
   license: "CC BY-SA 4.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Har_Ki_Dun.jpg"
-seoTitle: "Har Ki Dun Trek — 7-Day Itinerary & Complete Guide | Tripcamps"
+seoTitle: "Har Ki Dun Trek | 7-Day Itinerary & Complete Guide | Tripcamps"
 seoDescription: "Plan the Har Ki Dun trek: itinerary via Sankri and Osla village, best season, difficulty, and how to reach the trailhead."
 featured: false
 ---

@@ -37,7 +37,7 @@ heroImage:
   author: "Chaiyathat"
   license: "CC BY-SA 4.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Krung_Ching_Waterfall_(2).jpg"
-seoTitle: "Khao Luang National Park Trek Guide — 3-Day Itinerary | Tripcamps"
+seoTitle: "Khao Luang National Park Trek Guide | 3-Day Itinerary | Tripcamps"
 seoDescription: "Plan the Khao Luang trek: itinerary, permits, and best season for climbing the southern Thai peninsula's highest peak."
 ---
 

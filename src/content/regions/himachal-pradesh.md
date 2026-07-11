@@ -11,7 +11,7 @@ heroImage:
   author: "Timothy A. Gonsalves"
   license: "CC BY-SA 4.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:NH505_Spiti_Kaza_Losar_Jun18_D72_7797.jpg"
-seoTitle: "Himachal Pradesh Treks — Kullu, Parvati Valley & Spiti Trails | Tripcamps"
+seoTitle: "Himachal Pradesh Treks | Kullu, Parvati Valley & Spiti Trails | Tripcamps"
 seoDescription: "Discover 9 treks across Himachal Pradesh, from easy Triund and Prashar Lake day-hikes to high-altitude crossings like Hampta Pass and Pin Parvati Pass."
 ---
 

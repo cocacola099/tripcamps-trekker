@@ -64,7 +64,7 @@ heroImage:
   author: "anita kluska"
   license: "CC BY 2.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Annapurna_III_and_Gangapurna.jpg"
-seoTitle: "Nar Phu Valley Trek — 12-Day Itinerary & Guide | Tripcamps"
+seoTitle: "Nar Phu Valley Trek | 12-Day Itinerary & Guide | Tripcamps"
 seoDescription: "Plan the Nar Phu Valley trek: a 12-day itinerary to two of Nepal's most isolated villages, crossing Kang La to the Annapurna Circuit."
 featured: false
 ---

@@ -55,7 +55,7 @@ heroImage:
   author: "Sumita Roy Dutta"
   license: "CC BY-SA 4.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Narrowest_part_of_Frozen_Zanskar_river.jpg"
-seoTitle: "Chadar Trek — 9-Day Frozen Zanskar River Itinerary | Tripcamps"
+seoTitle: "Chadar Trek | 9-Day Frozen Zanskar River Itinerary | Tripcamps"
 seoDescription: "Plan the Chadar trek across the frozen Zanskar river: 9-day itinerary, extreme winter conditions, permits, and essential safety notes."
 featured: false
 ---

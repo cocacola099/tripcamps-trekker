@@ -34,7 +34,7 @@ heroImage:
   author: "BerryJ"
   license: "CC BY-SA 4.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:1001_Khao_Yai_National_Park_2.jpg"
-seoTitle: "Khao Yai National Park Trek Guide — 2-Day Itinerary | Tripcamps"
+seoTitle: "Khao Yai National Park Trek Guide | 2-Day Itinerary | Tripcamps"
 seoDescription: "Plan the Khao Yai National Park trek: itinerary, wildlife-watching trails, and best season near Bangkok, Thailand."
 ---
 

@@ -11,7 +11,7 @@ heroImage:
   author: "Ejaz Rizvi"
   license: "CC BY-SA 3.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Clicked_at_Mussoorie.jpg"
-seoTitle: "Uttarakhand Treks — Himalayan Trails in the Garhwal & Kumaon | Tripcamps"
+seoTitle: "Uttarakhand Treks | Himalayan Trails in the Garhwal & Kumaon | Tripcamps"
 seoDescription: "Explore 9 hand-picked treks across Uttarakhand's Garhwal and Kumaon Himalaya — from Kedarkantha's snow ridges to the Valley of Flowers."
 ---
 

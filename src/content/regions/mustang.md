@@ -11,7 +11,7 @@ heroImage:
   author: "AnticheSere"
   license: "CC BY-SA 3.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Mustang_desert.JPG"
-seoTitle: "Mustang Region Treks — Nepal | Tripcamps"
+seoTitle: "Mustang Region Treks | Nepal | Tripcamps"
 seoDescription: "Explore treks in Nepal's Mustang region: Upper Mustang to the walled city of Lo Manthang, and the remote Nar Phu Valley."
 ---
 

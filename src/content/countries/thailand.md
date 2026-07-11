@@ -9,7 +9,7 @@ heroImage:
   author: "27Tula"
   license: "CC BY-SA 3.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:COD_0877.jpg"
-seoTitle: "Thailand Treks — 10 Trekking Destinations Across 3 Regions | Tripcamps"
+seoTitle: "Thailand Treks | 10 Trekking Destinations Across 3 Regions | Tripcamps"
 seoDescription: "Explore 10 trekking destinations across Thailand: the northern hills around Chiang Mai and Chiang Rai, the waterfall parks of central Thailand, and the rainforest karsts of the south."
 ---
 

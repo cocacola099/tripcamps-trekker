@@ -49,7 +49,7 @@ heroImage:
   author: "Irfanaru"
   license: "CC BY-SA 3.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Tarsar_lake_Aru.jpg"
-seoTitle: "Tarsar Marsar Trek — 7-Day Itinerary via Aru Valley | Tripcamps"
+seoTitle: "Tarsar Marsar Trek | 7-Day Itinerary via Aru Valley | Tripcamps"
 seoDescription: "Plan the Tarsar Marsar trek from Aru near Pahalgam: 7-day itinerary to twin alpine lakes, best season, and difficulty."
 featured: false
 ---

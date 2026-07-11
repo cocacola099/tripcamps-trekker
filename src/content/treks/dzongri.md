@@ -46,7 +46,7 @@ heroImage:
   author: "Ayushagrawal28"
   license: "CC BY-SA 4.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Kanchanjanga.jpg"
-seoTitle: "Dzongri Trek — 6-Day Sikkim Itinerary & Guide | Tripcamps"
+seoTitle: "Dzongri Trek | 6-Day Sikkim Itinerary & Guide | Tripcamps"
 seoDescription: "Plan the Dzongri trek from Yuksom: a 6-day itinerary to a Kanchenjunga viewpoint, a shorter alternative to Goecha La."
 featured: false
 ---

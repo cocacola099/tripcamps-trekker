@@ -11,7 +11,7 @@ heroImage:
   author: "Wanjak Atikomchakorn"
   license: "CC BY-SA 4.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:1022-khao-sok-national-park-03.jpg"
-seoTitle: "Southern Thailand Treks — Khao Sok & Khao Luang | Tripcamps"
+seoTitle: "Southern Thailand Treks | Khao Sok & Khao Luang | Tripcamps"
 seoDescription: "Explore 2 treks in Southern Thailand: the ancient rainforest and karst lake of Khao Sok National Park and the cloud-forest slopes of Khao Luang National Park."
 ---
 

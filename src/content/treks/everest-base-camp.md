@@ -64,7 +64,7 @@ heroImage:
   author: "Icicles Adventure Treks & Tours (P.) Ltd."
   license: "CC BY-SA 4.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:A_group_of_trekkers_on_the_way_to_Everest_Base_Camp.jpg"
-seoTitle: "Everest Base Camp Trek — 12-Day Itinerary & Complete Guide | Tripcamps"
+seoTitle: "Everest Base Camp Trek | 12-Day Itinerary & Complete Guide | Tripcamps"
 seoDescription: "Plan the Everest Base Camp trek: full 12-day itinerary via Namche and Kala Patthar, best season, permits, and how to reach Lukla."
 featured: true
 ---

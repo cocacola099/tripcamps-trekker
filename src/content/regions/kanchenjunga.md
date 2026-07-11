@@ -11,7 +11,7 @@ heroImage:
   author: "Nirmaljoshi"
   license: "CC BY-SA 4.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Ghunsa_Village.JPG"
-seoTitle: "Kanchenjunga Region Treks — Nepal | Tripcamps"
+seoTitle: "Kanchenjunga Region Treks | Nepal | Tripcamps"
 seoDescription: "Explore the Kanchenjunga Base Camp trek in far-eastern Nepal, one of the country's most remote and least-crowded high-altitude routes."
 ---
 

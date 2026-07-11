@@ -37,7 +37,7 @@ heroImage:
   author: "Arindam Das"
   license: "CC BY 3.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Chandratal_(66383603).jpeg"
-seoTitle: "Chandratal Lake Trek — 3-Day Itinerary in Spiti | Tripcamps"
+seoTitle: "Chandratal Lake Trek | 3-Day Itinerary in Spiti | Tripcamps"
 seoDescription: "Plan a trip to Chandratal Lake in Spiti: a short, easy trek to the Moon Lake, best season, permits, and how to reach it."
 featured: true
 ---

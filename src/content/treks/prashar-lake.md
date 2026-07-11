@@ -34,7 +34,7 @@ heroImage:
   author: "Biswajit Majumdar"
   license: "CC BY-SA 3.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Prashar_lake_and_Temple,Himachal_Pradesh_-_panoramio.jpg"
-seoTitle: "Prashar Lake Trek — 2-Day Itinerary from Mandi | Tripcamps"
+seoTitle: "Prashar Lake Trek | 2-Day Itinerary from Mandi | Tripcamps"
 seoDescription: "Plan the Prashar Lake trek near Mandi: an easy 2-day itinerary to a floating lake and pagoda temple, ideal for families."
 featured: false
 ---

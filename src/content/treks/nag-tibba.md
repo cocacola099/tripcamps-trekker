@@ -34,7 +34,7 @@ heroImage:
   author: "Ashish Gupta from Noida, India"
   license: "CC BY 2.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Gorgeous_valley_(16025531878).jpg"
-seoTitle: "Nag Tibba Trek — 2-Day Weekend Itinerary & Guide | Tripcamps"
+seoTitle: "Nag Tibba Trek | 2-Day Weekend Itinerary & Guide | Tripcamps"
 seoDescription: "Plan the Nag Tibba weekend trek from Dehradun: a 2-day itinerary, summit views, and how to reach the Pantwari trailhead."
 featured: false
 ---

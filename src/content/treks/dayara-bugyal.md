@@ -40,7 +40,7 @@ heroImage:
   author: "Vaibhav78545"
   license: "CC BY-SA 4.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Dayara_Bugyal_3.jpg"
-seoTitle: "Dayara Bugyal Trek — 4-Day Itinerary & Guide | Tripcamps"
+seoTitle: "Dayara Bugyal Trek | 4-Day Itinerary & Guide | Tripcamps"
 seoDescription: "Plan the Dayara Bugyal trek: a gentle 4-day meadow trek from Barsu with views of Bandarpoonch, suitable for beginners in any season."
 featured: false
 ---

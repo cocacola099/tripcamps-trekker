@@ -55,7 +55,7 @@ heroImage:
   author: "Amar"
   license: "CC BY-SA 3.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:ZemathangGlacierView.jpg"
-seoTitle: "Goecha La Trek — 9-Day Sikkim Itinerary & Guide | Tripcamps"
+seoTitle: "Goecha La Trek | 9-Day Sikkim Itinerary & Guide | Tripcamps"
 seoDescription: "Plan the Goecha La trek from Yuksom: 9-day itinerary to a close-up Kanchenjunga viewpoint, permits, best season, and difficulty."
 featured: true
 ---

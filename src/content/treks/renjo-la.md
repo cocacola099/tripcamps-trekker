@@ -64,7 +64,7 @@ heroImage:
   author: "Anuppanthi"
   license: "CC BY-SA 4.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Ranjo_la_pass_Everest_National_park.jpg"
-seoTitle: "Renjo La Pass Trek — 12-Day Itinerary & Guide | Tripcamps"
+seoTitle: "Renjo La Pass Trek | 12-Day Itinerary & Guide | Tripcamps"
 seoDescription: "Plan the Renjo La pass trek in the Khumbu: 12-day itinerary combining the Gokyo Lakes with one of Nepal's best mountain panoramas."
 featured: false
 ---

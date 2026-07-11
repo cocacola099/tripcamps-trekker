@@ -49,7 +49,7 @@ heroImage:
   author: "DanHobley"
   license: "CC BY-SA 3.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Zanskar_range_and_Stok_Kangri_from_Leh,_Ladakh_NW_India.JPG"
-seoTitle: "Stok Kangri Trek — 7-Day Summit Itinerary & Guide | Tripcamps"
+seoTitle: "Stok Kangri Trek | 7-Day Summit Itinerary & Guide | Tripcamps"
 seoDescription: "Plan the Stok Kangri summit climb near Leh: 7-day itinerary, difficulty, permits, and essential acclimatisation advice."
 featured: false
 ---

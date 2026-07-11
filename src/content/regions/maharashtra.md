@@ -11,7 +11,7 @@ heroImage:
   author: "Cj.samson"
   license: "CC BY 3.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Bali_Khila_Rajgad_Maharashtra.jpg"
-seoTitle: "Maharashtra Treks — Kalsubai & the Sahyadri Hills | Tripcamps"
+seoTitle: "Maharashtra Treks | Kalsubai & the Sahyadri Hills | Tripcamps"
 seoDescription: "Trek Maharashtra's Sahyadri range: Kalsubai, the state's highest peak, and other accessible hill treks near Mumbai and Pune."
 ---
 

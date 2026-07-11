@@ -46,7 +46,7 @@ heroImage:
   author: "Wassuprai"
   license: "Public domain"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:06_Tadapani.jpg"
-seoTitle: "Mardi Himal Trek — 6-Day Itinerary & Guide | Tripcamps"
+seoTitle: "Mardi Himal Trek | 6-Day Itinerary & Guide | Tripcamps"
 seoDescription: "Plan the Mardi Himal trek near Pokhara: a 6-day itinerary to a ridge-top viewpoint beneath Machhapuchhre, quieter than Poon Hill."
 featured: false
 ---

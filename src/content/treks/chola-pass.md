@@ -70,7 +70,7 @@ heroImage:
   author: "Kaibak"
   license: "CC BY-SA 4.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Cho-La_Pass,_Nepal.jpg"
-seoTitle: "Cho La Pass Trek — 14-Day Itinerary & Guide | Tripcamps"
+seoTitle: "Cho La Pass Trek | 14-Day Itinerary & Guide | Tripcamps"
 seoDescription: "Plan the Cho La Pass trek: 14-day itinerary linking Everest Base Camp and the Gokyo Lakes over a short glacier crossing."
 featured: false
 ---

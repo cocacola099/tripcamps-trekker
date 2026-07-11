@@ -46,7 +46,7 @@ heroImage:
   author: "Siddharth2121"
   license: "CC BY-SA 4.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Auli_in_October_2015_-_36.jpg"
-seoTitle: "Kuari Pass Trek — Curzon Trail Itinerary & Guide | Tripcamps"
+seoTitle: "Kuari Pass Trek | Curzon Trail Itinerary & Guide | Tripcamps"
 seoDescription: "Plan the Kuari Pass trek via Joshimath and Auli: itinerary, best season, difficulty, and the panoramic view that made it famous."
 featured: false
 ---
